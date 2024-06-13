@@ -1,0 +1,44 @@
+.benefitContainer {
+  /* border: solid red; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.benefitHead {
+  /* border: solid blue; */
+  width: 90%;
+}
+.benefitHead > h3 {
+  font-size: 30px;
+  text-align: center;
+}
+.benefitHead > h3 > span {
+  color: var(--customColor);
+}
+.benefitPara {
+  /* border: solid green; */
+  width: 80%;
+}
+.benefitPara > ul > li {
+  font-size: 20px;
+  margin: 20px;
+  color: grey;
+}
+.benefitPara > ul > li > span {
+  color: var(--customColor);
+  font-weight: bold;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .benefitContainer {
+    /* border: solid red; */
+    padding: 0px;
+    gap: 20px;
+  }
+  .benefitPara {
+    /* border: solid green; */
+    width: 90%;
+  }
+}

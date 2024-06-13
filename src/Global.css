@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "customFont";
+  src: url("./Fonts/futura/FUTURA55REGULAR.TTF") format("truetype");
+}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "customFont", sans-serif;
+}
+li {
+  font-family: "customFont", sans-serif;
+}
+li > span {
+  font-family: "customFont", sans-serif;
+}
+:root {
+  --customColor: #ff1818;
+}
+:root {
+  --customColor2: #e4e4e4;
+}
+

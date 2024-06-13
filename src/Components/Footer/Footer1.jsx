@@ -1,0 +1,103 @@
+import React from "react";
+import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+const Footer1 = () => {
+  return (
+    <div className="footer1Container">
+      <div className="footer1Content" id="footer1Content1">
+        <ul>
+          <h3>About Us</h3>
+          <li>
+            {" "}
+            <a href="">About Us</a>
+          </li>
+          <li>
+            {" "}
+            <a href="">Corporate Training</a>
+          </li>
+          <li>
+            {" "}
+            <a href="">Exam Perpetration</a>
+          </li>
+          <li>
+            {" "}
+            <a href="">Blog</a>
+          </li>
+          <li>
+            {" "}
+            <a href="">Become a Teacher</a>
+          </li>
+        </ul>
+      </div>
+      <div className="footer1Content" id="footer1Content2">
+        <ul>
+          <h3>Courses</h3>
+          <li>
+            {" "}
+            <a href="">German A1 Level</a>
+          </li>
+          <li>
+            {" "}
+            <a href="">German A2 Level</a>
+          </li>
+          <li>
+            {" "}
+            <a href="">German B1 Level</a>
+          </li>
+          <li>
+            {" "}
+            <a href="">German B2 Level</a>
+          </li>
+          <li>
+            {" "}
+            <a href="">German C1 Level</a>
+          </li>
+          <li>
+            {" "}
+            <a href="">German C2 Level</a>
+          </li>
+          <li>
+            {" "}
+            <a href="">Intensive Course</a>
+          </li>
+          <li>
+            {" "}
+            <a href="">Kids Course</a>
+          </li>
+        </ul>
+      </div>
+      <div className="footer1Content" id="footer1Content3">
+        <ul>
+          <h3>Support</h3>
+          <li>Need Help</li>
+          <li>
+            <a href="mailto:sahil@prizmaacademy.com">sahil@prizmaacademy.com</a>
+          </li>
+        </ul>
+      </div>
+      <div className="footer1Content" id="footer1Content4">
+        <ul>
+          <h3>Contact Us</h3>
+          <li>
+            <FontAwesomeIcon
+              icon={faPhone}
+              className="menuIcon"
+            ></FontAwesomeIcon>
+            <a href="tel:9538608484">+91 9538608484</a>
+          </li>
+          <li>
+            <FontAwesomeIcon
+              icon={faLocationDot}
+              className="menuIcon"
+            ></FontAwesomeIcon>
+            3rd Floor, 4 C-513, above Bandhan Bank, HRBR Layout 2nd Block, HRBR
+            Layout, Kalyan Nagar, Bengaluru, Karnataka 560043
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Footer1;
