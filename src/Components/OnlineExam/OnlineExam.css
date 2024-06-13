@@ -1,0 +1,48 @@
+.onlineExamContainer {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+}
+.onlineExamHead {
+  /* border: solid blue; */
+  width: 100%;
+}
+.onlineExamHead > h2 {
+  text-align: start;
+  font-size: 30px;
+}
+.onlineExamHead > h2 > span {
+  color: var(--customColor);
+}
+.onlineExamHead > p {
+  font-size: 20px;
+  color: grey;
+}
+.onlineExamMainContainer {
+  /* border: solid green; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.onlineExamCard > ul > h3 {
+  color: var(--customColor);
+  font-size: 25px;
+}
+.onlineExamCard > ul > li {
+  font-size: 20px;
+  margin: 10px;
+  color: grey;
+}
+@media screen and (min-width:320px) and (max-width:768px) {
+    .onlineExamContainer {
+        /* border: solid red; */
+        padding: 20px;
+      }
+    
+}

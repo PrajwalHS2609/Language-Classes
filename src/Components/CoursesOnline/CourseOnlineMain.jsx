@@ -2,23 +2,23 @@ import React from "react";
 import "./CoursesOnline.css";
 import CourseOnlineCard from "./CourseOnlineCard";
 const CourseOnlineMain = () => {
-  const list1 = [
+  let list1 = [
     <li>Interactive group exercises</li>,
     <li>Speak German in Live Sessions</li>,
     <li>Course start on fixed dates</li>,
     <li>Levels: A1-C2</li>,
   ];
-  const list2 = [
+  let list2 = [
     <li>German Individual Online</li>,
     <li>Individual mentoring and support</li>,
     <li>Maximum flexibility in terms of timing</li>,
     <li>Course start is possible at any time</li>,
     <li>Levels: A1-C1</li>,
   ];
-  const list3 = [
+  let list3 = [
     <li>Intensive German Online</li>,
     <li>High learning intensity through daily lessons</li>,
-    <li>75 lessons in tota</li>,
+    <li>75 lessons in total</li>,
     <li>Learning goals are achieved quickly thanks to intensive support</li>,
     <li>Regular examination options</li>,
   ];
