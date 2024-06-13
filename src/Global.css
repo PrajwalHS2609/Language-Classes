@@ -24,8 +24,5 @@ li > span {
 }
 :root {
   --customColor: #ff1818;
+  --customColor2: #fff6f4;
 }
-:root {
-  --customColor2: #e4e4e4;
-}
-
