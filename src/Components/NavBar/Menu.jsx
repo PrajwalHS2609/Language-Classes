@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./Navbar.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown, faBars, faX } from "@fortawesome/free-solid-svg-icons";
+  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  import { faAngleDown, faBars, faX } from "@fortawesome/free-solid-svg-icons";
 const Menu = () => {
   let [drop, setDrop] = useState(false);
   let dropRef = useRef();
