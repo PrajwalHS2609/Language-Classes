@@ -2,10 +2,34 @@
   /* border: solid; */
   height: 88vh;
   background-color: black;
+  position: relative;
 }
 .homeHeadingContainer > video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   background-color: black;
+}
+.homeHeadingCover {
+  background-color: rgba(0, 0, 0, 0.404);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeHeadingCover > h2 {
+  /* border: solid red; */
+  width: 60%;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 10px red;
+  font-weight: lighter;
+}
+.homeHeadingCover > h2 > span {
+  color: var(--customColor);
 }
