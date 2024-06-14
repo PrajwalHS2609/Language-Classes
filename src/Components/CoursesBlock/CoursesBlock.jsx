@@ -1,7 +1,8 @@
 import React from "react";
 import "./CoursesBlock.css";
 import CoursesBlockCard from "./CoursesBlockCard";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 const CoursesBlock = () => {
   return (
     <div className="coursesBlockContainer">
@@ -50,7 +51,13 @@ const CoursesBlock = () => {
         <CoursesBlockCard head="Kids Courses" para="Trained 600+ Learners" />
         <div className="coursesBlockButton">
           <button>
-            Show All <span>+</span>
+            Book Now
+            <span>
+              <FontAwesomeIcon
+                icon={faAngleRight}
+                className="bookIcon"
+              ></FontAwesomeIcon>
+            </span>
           </button>
         </div>
       </div>
