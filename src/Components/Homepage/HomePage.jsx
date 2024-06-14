@@ -9,6 +9,7 @@ import Footer from "../Footer/Footer";
 import OnlineExam from "../OnlineExam/OnlineExam";
 import WhyUs from './../WhyUs/WhyUs';
 import Trainers from "../Trainers/Trainers";
+import SocialVid from "../SocialVid/SocialVid";
 
 const HomePage = () => {
   return (
@@ -22,6 +23,7 @@ const HomePage = () => {
       <GermanClasses />
       <Benefits />
       <OnlineExam/>
+      <SocialVid/>
       <Footer/>
     </div>
   );

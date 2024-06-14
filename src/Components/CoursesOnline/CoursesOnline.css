@@ -1,12 +1,32 @@
 .coursesOnlineContainer {
   /* border: solid red; */
   width: 100%;
+  height: 100%;
   background-color: var(--customColor2);
   margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+}
+.coursesOnlineContainer > img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: 0px 0px;
+  margin: 0;
+}
+.coursesOnlineExamCover {
+  background-color: rgba(0, 0, 0, 0.566);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
 }
 .coursesOnlineHead {
   /* border: solid blue; */
@@ -139,8 +159,8 @@
     /* border: solid red; */
     width: 100%;
     background-color: var(--customColor2);
-   margin-top: 50px;
-   padding: 20px;
+    margin-top: 50px;
+    padding: 20px;
   }
   .courseOnlineCardContainer > h3 {
     color: var(--customColor);
