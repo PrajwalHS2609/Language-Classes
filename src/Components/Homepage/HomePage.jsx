@@ -7,6 +7,7 @@ import GermanClasses from "../GermanClasses/GermanClasses";
 import Benefits from "../Benefits/Benefits";
 import Footer from "../Footer/Footer";
 import OnlineExam from "../OnlineExam/OnlineExam";
+import WhyUs from './../WhyUs/WhyUs';
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <CoursesBlock />
       <CoursesOnline />
       <GermanBegins />
+      <WhyUs/>
       <GermanClasses />
       <Benefits />
       <OnlineExam/>

@@ -1,0 +1,66 @@
+.whyUsContainer {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  gap: 10px;
+}
+.whyUsHeadContainer {
+  /* border: solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.whyUsHeadContainer > h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+}
+.whyUsHeadContainer > h2 > span {
+  color: var(--customColor);
+}
+.whyUsMainContainer {
+  /* border: solid green; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.whyUsCardContainer {
+  /* border: solid red; */
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.whyUsCardContentImg {
+  /* border: solid blue; */
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whyUsCardContentImg > img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+.whyUsCardContentTxt {
+  /* border: solid green; */
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.whyUsCardContentTxt > p {
+  font-size: 20px;
+  text-align: center;
+}
