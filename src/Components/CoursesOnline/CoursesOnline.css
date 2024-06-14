@@ -2,7 +2,7 @@
   /* border: solid red; */
   width: 100%;
   background-color: var(--customColor2);
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +139,7 @@
     /* border: solid red; */
     width: 100%;
     background-color: var(--customColor2);
-   margin-top: 20px;
+   margin-top: 50px;
    padding: 20px;
   }
   .courseOnlineCardContainer > h3 {

@@ -8,7 +8,7 @@ const Trainers = () => {
     <div className="trainerContainer">
       <div className="trainerCover">
         <TrainersHead />
-        <TrainersMain/>
+        <TrainersMain />
       </div>
       <img src={trainerBanner} alt="" />
     </div>

@@ -1,10 +1,12 @@
 .trainerContainer {
   /* border: solid red; */
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 .trainerContainer > img {
   width: 100%;
-  height: 450px;
+  height: 500px;
   object-fit: cover;
   object-position: 0px 0px;
   margin: 0;
@@ -66,6 +68,64 @@
   margin: 10px;
   margin-left: 50px;
 }
-.trainersHeadContainer>h2>span{
-    color: var(--customColor);
+.trainersHeadContainer > h2 > span {
+  color: var(--customColor);
+}
+@media screen and (min-width: 320px) and (max-width: 990px) {
+  .trainerContainer {
+    /* border: solid red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+  }
+  .trainerContainer > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 0px 0px;
+    margin: 0;
+  }
+  .trainerCover {
+    /* border: solid; */
+    background-color: var(--customColor2);
+    height: 100%;
+    width: 100%;
+    position: static;
+  }
+  .trainersHeadContainer > h2 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding: 5px;
+  }
+  .trainersHeadContainer > p {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    text-align: justify;
+  }
+  .trainersCardContainer {
+    /* border: solid green; */
+    height: 100%;
+    width: 90%;
+    margin: 20px;
+  }
+  .trainersCardContainer > ul > li {
+    color: black;
+    font-size: 25px;
+    margin: 10px;
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width:990px) {
+    .trainersHeadContainer > p {
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+      }
+    
 }
