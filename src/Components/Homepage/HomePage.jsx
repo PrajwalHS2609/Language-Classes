@@ -7,7 +7,7 @@ import GermanClasses from "../GermanClasses/GermanClasses";
 import Benefits from "../Benefits/Benefits";
 import Footer from "../Footer/Footer";
 import OnlineExam from "../OnlineExam/OnlineExam";
-import WhyUs from './../WhyUs/WhyUs';
+import WhyUs from "./../WhyUs/WhyUs";
 import Trainers from "../Trainers/Trainers";
 import SocialVid from "../SocialVid/SocialVid";
 
@@ -16,15 +16,15 @@ const HomePage = () => {
     <div>
       <HomeHeadingVid />
       <CoursesBlock />
-      <Trainers/>
+      <Trainers />
+      <OnlineExam />
       <CoursesOnline />
       <GermanBegins />
-      <WhyUs/>
+      <WhyUs />
+      <SocialVid />
       <GermanClasses />
       <Benefits />
-      <OnlineExam/>
-      <SocialVid/>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

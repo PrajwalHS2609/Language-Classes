@@ -1,12 +1,12 @@
 import React from "react";
-import { YouTubeEmbed } from "react-social-media-embed";
-import { InstagramEmbed } from "react-social-media-embed";
 import SocialVidMain from "./SocialVidMain";
-
+import SocialVidHead from "./SocialVidHead";
+import "./SocialVid.css"
 const SocialVid = () => {
   return (
     <div className="socialVidContainer">
- <SocialVidMain/>
+      <SocialVidHead />
+      <SocialVidMain />
     </div>
   );
 };

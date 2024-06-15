@@ -40,12 +40,13 @@
 .coursesOnlineHead > h3 {
   font-size: 30px;
   text-align: center;
+  color: white;
 }
 .coursesOnlineHead > h3 > span {
   color: var(--customColor);
 }
 .coursesOnlineHead > p {
-  color: grey;
+  color: white;
   font-size: 20px;
   padding: 10px;
   text-align: center;
@@ -70,101 +71,257 @@
   font-size: 25px;
 }
 .courseOnlineCardContainer > ul {
-  padding: 20px;
+  padding: 10px;
 }
 .courseOnlineCardContainer > ul > li {
   margin: 10px;
   font-size: 20px;
-  color: grey;
+  color: white;
 }
 @media screen and (min-width: 320px) {
   .coursesOnlineContainer {
     /* border: solid red; */
+    flex-direction: column-reverse;
+  }
+  .coursesOnlineContainer > img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 0px 0px;
+    margin: 0;
+  }
+  .coursesOnlineHead {
+    /* border: solid blue; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .coursesOnlineHead > h3 {
+    /* border: solid red; */
+    font-size: 30px;
+    text-align: center;
+    color: black;
+  }
+  .coursesOnlineHead > p {
+    color: black;
+  }
+  .coursesOnlineExamCover {
     background-color: var(--customColor2);
-    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+    position: static;
   }
   .courseOnlineCardContainer {
     /* border: solid brown; */
     height: 100%;
-    margin: 20px;
-    padding: 10px;
-    min-width: 300px;
+    margin: 10px;
+    padding: 0px;
+    width: 90%;
   }
   .courseOnlineCardContainer > h3 {
     text-align: center;
   }
-  .courseOnlineCardContainer > ul {
-    padding: 10px;
+  .courseOnlineCardContainer > ul > li {
+    margin: 10px;
+    font-size: 20px;
+    color: black;
   }
 }
 @media screen and (min-width: 768px) {
   .coursesOnlineContainer {
     /* border: solid red; */
+    flex-direction: column-reverse;
+  }
+
+  .coursesOnlineHead {
+    /* border: solid blue; */
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .coursesOnlineHead > h3 {
+    /* border: solid red; */
+    font-size: 30px;
+    text-align: center;
+    color: black;
+  }
+  .coursesOnlineHead > p {
+    color: black;
+    text-align: center;
+  }
+  .coursesOnlineExamCover {
     background-color: var(--customColor2);
-    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+    position: static;
   }
   .courseOnlineCardContainer {
     /* border: solid brown; */
     height: 100%;
-    margin: 20px;
-    padding: 10px;
-    min-width: 370px;
+    margin: 10px;
+    padding: 0px;
+    width: 500px;
   }
   .courseOnlineCardContainer > h3 {
     text-align: center;
   }
-  .coursesOnlineHead > p {
-    color: grey;
-    padding: 20px;
-  }
-  .courseOnlineCardContainer > ul {
-    padding: 10px;
-  }
   .courseOnlineCardContainer > ul > li {
+    margin: 10px;
     font-size: 20px;
-    color: grey;
+    color: black;
   }
 }
 @media screen and (min-width: 990px) {
   .coursesOnlineContainer {
     /* border: solid red; */
     width: 100%;
-    background-color: var(--customColor2);
-    margin-top: 20px;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .coursesOnlineContainer > img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    object-position: 0px 0px;
+    margin: 0;
+  }
+  .coursesOnlineExamCover {
+    background-color: rgba(0, 0, 0, 0.566);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    padding: 30px;
+  }
+  .coursesOnlineHead {
+    /* border: solid blue; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
   }
   .coursesOnlineHead > h3 {
-    font-size: 30px;
-    text-align: start;
+    color: white;
+  }
+
+  .coursesOnlineHead > p {
+    color: white;
+    text-align: center;
   }
   .courseOnlineMainContainer {
     /* border: solid green; */
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
   }
   .courseOnlineCardContainer {
     /* border: solid brown; */
-    height: 100%;
+    height: 350px;
     margin: 20px;
-    padding: 10px;
-    min-width: 200px;
+    padding: 30px;
+    width: 40%;
+  }
+
+  .courseOnlineCardContainer > ul > li {
+    margin: 10px;
+    font-size: 20px;
+    color: white;
   }
 }
 @media screen and (min-width: 1200px) {
   .coursesOnlineContainer {
     /* border: solid red; */
     width: 100%;
-    background-color: var(--customColor2);
+    height: 100%;
     margin-top: 50px;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .coursesOnlineContainer > img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 0px 0px;
+    margin: 0;
+  }
+  .coursesOnlineExamCover {
+    background-color: rgba(0, 0, 0, 0.566);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    padding: 10px;
+  }
+  .coursesOnlineHead {
+    /* border: solid blue; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .coursesOnlineHead > h3 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+  }
+
+  .coursesOnlineHead > p {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  .courseOnlineMainContainer {
+    /* border: solid green; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .courseOnlineCardContainer {
+    /* border: solid brown; */
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
   }
   .courseOnlineCardContainer > h3 {
-    color: var(--customColor);
-    font-size: 25px;
-    text-align: start;
+  text-align: start;
+  }
+  .courseOnlineCardContainer > ul > li {
+    margin: 10px;
+    font-size: 20px;
+    color: white;
   }
 }

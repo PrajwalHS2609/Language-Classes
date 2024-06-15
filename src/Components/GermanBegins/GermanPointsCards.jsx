@@ -3,13 +3,13 @@ import "./GermanBegins.css";
 const GermanPointsCards = (props) => {
   return (
     <div className="germanPointsCardsContain">
-      <div className="germanPointsCardsContent1"><p>{props.no}</p></div>
-      <div className="germanPointsCardsContent2">
-        <h3>{props.head}</h3>
-        <p>
-        {props.para}
-        </p>
+      <div className="pointsCardsImgContainer">
+        <img src={props.img} alt="" />
       </div>
+      <div className="pointsCardsHeadContainer">
+        <h3> {props.head} </h3>
+      </div>
+      <div className="pointsCardsParaContainer"><p>{props.para}</p></div>
     </div>
   );
 };

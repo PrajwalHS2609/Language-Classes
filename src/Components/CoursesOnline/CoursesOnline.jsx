@@ -2,7 +2,7 @@ import React from "react";
 import "./CoursesOnline.css";
 import CoursesOnlineHead from "./CoursesOnlineHead";
 import CourseOnlineMain from "./CourseOnlineMain";
-import trainerBanner from "./../../Media/training.png";
+import GermanOnline from "./../../Media/GermanOnline.png";
 
 const CoursesOnline = () => {
   return (
@@ -11,7 +11,7 @@ const CoursesOnline = () => {
         <CoursesOnlineHead />
         <CourseOnlineMain />
       </div>
-      <img src={trainerBanner} alt="" />
+      <img src={GermanOnline} alt="" />
     </div>
   );
 };

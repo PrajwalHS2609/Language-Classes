@@ -113,19 +113,21 @@
     width: 90%;
     margin: 20px;
   }
+  .trainersCardContainer > ul > h3 {
+    text-align: center;
+  }
   .trainersCardContainer > ul > li {
     color: black;
-    font-size: 25px;
-    margin: 10px;
+    font-size: 20px;
+    margin: 20px;
     margin-left: 50px;
   }
 }
-@media screen and (min-width:990px) {
-    .trainersHeadContainer > p {
-        color: white;
-        font-size: 20px;
-        padding: 10px;
-        text-align: center;
-      }
-    
+@media screen and (min-width: 990px) {
+  .trainersHeadContainer > p {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
 }
