@@ -1,7 +1,18 @@
 import React from "react";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPhone,
+  faLocationDot,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faLinkedin,
+  faInstagram,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+
 const Footer1 = () => {
   return (
     <div className="footer1Container">
@@ -93,6 +104,50 @@ const Footer1 = () => {
             ></FontAwesomeIcon>
             3rd Floor, 4 C-513, above Bandhan Bank, HRBR Layout 2nd Block, HRBR
             Layout, Kalyan Nagar, Bengaluru, Karnataka 560043
+          </li>
+          <li>
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="menuIcon"
+            ></FontAwesomeIcon>
+            <a href="mailto:info@prizmaacademy.com">info@prizmaacademy.com</a>
+          </li>
+        </ul>
+      </div>
+      <div className="footer1Content" id="footer1Content5">
+        <ul>
+          <h3>Social Media</h3>
+          <li>
+            <a href="https://www.facebook.com/PrizmaAcademyfb">
+              <FontAwesomeIcon
+                icon={faFacebook}
+                className="footerIcon"
+              ></FontAwesomeIcon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/prizmaacademy/">
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="footerIcon"
+              ></FontAwesomeIcon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/prizmalanguageacademy/">
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="footerIcon"
+              ></FontAwesomeIcon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UC_MS3y-5o36akwsI6hNbA9Q">
+              <FontAwesomeIcon
+                icon={faYoutube}
+                className="footerIcon"
+              ></FontAwesomeIcon>
+            </a>
           </li>
         </ul>
       </div>
