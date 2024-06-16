@@ -92,6 +92,7 @@ border: 1px solid white;
   align-items: center;
   background-color: var(--customColor);
   color: white;
+  cursor: pointer;
 }
 .coursesBlockButton > button > span {
   font-size: 30px;

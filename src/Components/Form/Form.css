@@ -1,0 +1,160 @@
+.formCover {
+  height: 90vh;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  gap: 50px;
+  background-color: rgba(0, 0, 0, 0.526);
+  backdrop-filter: blur(10px);
+}
+.formExit {
+  /* border: solid blue; */
+  width: 100%;
+}
+/* .formMainContainer {
+  border: solid red;
+  height: 500px;
+  width: 400px;
+} */
+.formExitIcon {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.formMainContainer {
+  /* border: solid red; */
+  height: 500px;
+  width: 400px;
+  backdrop-filter: blur(10px);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.formMainContainer > form {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+}
+.formMainContainer > form > fieldset {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.formMainContainer > form > fieldset > legend {
+  font-size: 150%;
+  text-align: center;
+  color: black;
+  /* border: solid black; */
+}
+.formMainContainer > form > fieldset > table {
+  /* border: solid yellow; */
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.formMainContainer > form > fieldset > table > tr {
+  /* border: solid purple; */
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.formMainContainer > form > fieldset > table > tr > td {
+  border-bottom: solid grey;
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formMainContainer > form > fieldset > table > tr > td > input {
+  font-size: 100%;
+  width: 90%;
+  height: 90%;
+  border: none;
+  outline: none;
+}
+.formMainContainer > form > fieldset > table > tr > td > select {
+  border: none;
+  outline: none;
+  width: 90%;
+  color: grey;
+  font-size: 100%;
+}
+.formMainContainer > form > fieldset > table > tr > td > select > option {
+  color: grey;
+}
+.formMainContainer > form > fieldset > table > button {
+  border: solid var(--customColor);
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: white;
+  color: white;
+  background-color: var(--customColor);
+  text-align: center;
+  transition: 200ms ease-in-out;
+}
+.formMainContainer > form > fieldset > table > button:hover {
+  color: var(--customColor);
+  background-color: white;
+  cursor: pointer;
+}
+.formIcon {
+  font-size: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .formMainContainer {
+    /* border: solid red; */
+    position: relative;
+    height: 400px;
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .formMainContainer {
+    /* border: solid red; */
+    position: relative;
+    height: 400px;
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .formMainContainer {
+    /* border: solid red; */
+    position: relative;
+    height: 500px;
+    max-width: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .formMainContainer {
+    /* border: solid red; */
+    position: relative;
+    height: 500px;
+    max-width: 500px;
+  }
+}

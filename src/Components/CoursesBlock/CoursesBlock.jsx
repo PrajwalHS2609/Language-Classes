@@ -3,7 +3,13 @@ import "./CoursesBlock.css";
 import CoursesBlockCard from "./CoursesBlockCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import Form from "../Form/Form";
 const CoursesBlock = () => {
+  let handlePop = (e) => {
+    e.preventDefault();
+    let popUp = document.querySelector(".formCover");
+    popUp.style.display = "flex";
+  };
   return (
     <div className="coursesBlockContainer">
       <div className="coursesBlockContent">
@@ -50,7 +56,7 @@ const CoursesBlock = () => {
         />
         <CoursesBlockCard head="Kids Courses" para="Trained 600+ Learners" />
         <div className="coursesBlockButton">
-          <button>
+          <button onClick={handlePop}>
             Book Now
             <span>
               <FontAwesomeIcon
@@ -60,6 +66,7 @@ const CoursesBlock = () => {
             </span>
           </button>
         </div>
+        <Form/>
       </div>
     </div>
   );

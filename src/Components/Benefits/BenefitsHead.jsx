@@ -4,7 +4,7 @@ const BenefitsHead = () => {
   return (
     <div className="benefitHead">
       <h3>
-        Benefits for Benefits for <span>Prizma Academy</span> students:{" "}
+         Benefits for <span>Prizma Academy</span> students:{" "}
       </h3>
     </div>
   );

@@ -10,6 +10,7 @@ import OnlineExam from "../OnlineExam/OnlineExam";
 import WhyUs from "./../WhyUs/WhyUs";
 import Trainers from "../Trainers/Trainers";
 import SocialVid from "../SocialVid/SocialVid";
+import PrizmaMap from "../PrizmaMap/PrizmaMap";
 
 const HomePage = () => {
   return (
@@ -24,6 +25,7 @@ const HomePage = () => {
       <SocialVid />
       <GermanClasses />
       <Benefits />
+      <PrizmaMap/>
       <Footer />
     </div>
   );
