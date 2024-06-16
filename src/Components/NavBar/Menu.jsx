@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import "./Navbar.css";
   import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
   import { faAngleDown, faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 const Menu = () => {
   let [drop, setDrop] = useState(false);
   let dropRef = useRef();
@@ -33,7 +34,7 @@ const Menu = () => {
     <>
       <div className="menuContainer">
         <li>
-          <a href="">Home</a>
+          <Link to={"/"}>Home</Link>
         </li>
         <li className="menuDrop">
           <a href="">Courses</a>

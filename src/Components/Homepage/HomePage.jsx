@@ -26,7 +26,6 @@ const HomePage = () => {
       <GermanClasses />
       <Benefits />
       <PrizmaMap/>
-      <Footer />
     </div>
   );
 };

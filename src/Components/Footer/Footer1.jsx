@@ -78,7 +78,7 @@ const Footer1 = () => {
           </li>
         </ul>
       </div>
-      <div className="footer1Content" id="footer1Content3">
+      {/* <div className="footer1Content" id="footer1Content3">
         <ul>
           <h3>Support</h3>
           <li>Need Help</li>
@@ -86,7 +86,7 @@ const Footer1 = () => {
             <a href="mailto:sahil@prizmaacademy.com">sahil@prizmaacademy.com</a>
           </li>
         </ul>
-      </div>
+      </div> */}
       <div className="footer1Content" id="footer1Content4">
         <ul>
           <h3>Contact Us</h3>
