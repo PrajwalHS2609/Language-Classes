@@ -181,6 +181,10 @@
     right: 0px;
     width: 100%;
   }
+  .coursePgCardWrapper {
+    /* border: solid yellowgreen; */
+    transform: translateY(0);
+  }
   .coursePgImgTxt > h2 {
     font-size: 30px;
     text-align: center;
@@ -204,18 +208,18 @@
   }
 }
 @media screen and (min-width: 768px) {
-    .coursePgImgTxt {
-        /* border: solid green; */
-        position: absolute;
-        top: 0px;
-        right: 100px;
-        width: 40%;
-      }
+  .coursePgImgTxt {
+    /* border: solid green; */
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    width: 40%;
+  }
 }
 @media screen and (min-width: 990px) {
-    .coursePgCardHead > h3 {
-        font-size: 26px;
-        text-align: center;
-        color: black;
-      }
+  .coursePgCardHead > h3 {
+    font-size: 26px;
+    text-align: center;
+    color: black;
+  }
 }
