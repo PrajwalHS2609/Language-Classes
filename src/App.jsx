@@ -9,6 +9,7 @@ import Terms from "./Components/Policy/Terms";
 import Footer from "./Components/Footer/Footer";
 import ScrollTo from "./Components/ScrollTo/ScrollTo";
 import RefundPolicy from "./Components/Policy/RefundPolicy";
+import CoursesPage from "./Components/CoursesPage/CoursesPage";
 const App = () => {
   return (
     <div className="appContainer">
@@ -17,6 +18,7 @@ const App = () => {
         <ScrollTo />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/courses" element={<CoursesPage/>}/>
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/terms-and-Conditions" element={<Terms />} />

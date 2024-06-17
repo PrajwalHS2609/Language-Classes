@@ -1,0 +1,221 @@
+.coursesPageContainer {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.coursePageImg {
+  /* border: solid blue; */
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+.coursePageImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coursePgImgTxt {
+  /* border: solid green; */
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+  height: 100%;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.571);
+}
+.coursePgImgTxt > h2 {
+  font-size: 30px;
+}
+.coursePgImgTxt > h2 > span {
+  color: var(--customColor);
+}
+.coursePgImgTxt > p {
+  font-size: 20px;
+}
+.coursePgImgTxt > p > a {
+  color: var(--customColor);
+  font-weight: bold;
+  text-decoration: none;
+}
+.coursePgImgButton {
+  /* border: solid red; */
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.coursePgImgButton > button {
+  width: 40%;
+  height: 80%;
+  background-color: var(--customColor);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+.coursePgImgButton > button:hover {
+  background-color: black;
+}
+.coursePgGerman {
+  /* border: solid red; */
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.coursePgGermanHead {
+  /* border: solid blue; */
+  width: 90%;
+}
+.coursePgGermanHead > h2 {
+  text-align: start;
+  font-size: 30px;
+}
+.coursePgGermanHead > h2 > span {
+  color: var(--customColor);
+}
+.coursePgGermanPara {
+  /* border: solid green; */
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.coursePgGermanPara > p {
+  font-size: 20px;
+}
+.coursePgMainContainer {
+  /* border: solid brown; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 35px;
+}
+
+.coursePgCardContainer {
+  /* border: solid red; */
+  height: 100%;
+  width: 25%;
+  overflow: hidden;
+  padding: 0px;
+  margin: 20px;
+}
+.coursePgCardContainer > a {
+  text-decoration: none;
+}
+.coursePgCardWrapper {
+  /* border: solid yellowgreen; */
+  transform: translateY(55px);
+  height: 100%;
+  width: 100%;
+  transition: 500ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+.coursePgCardContainer:hover .coursePgCardWrapper {
+  transform: translateY(0px);
+}
+.coursePgCardImg {
+  /* border: solid blue; */
+  height: 100%;
+}
+
+.coursePgCardImg > img {
+  width: 100%;
+  height: 100%;
+}
+.coursePgCardHead {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coursePgCardHead > h3 {
+  font-size: 25px;
+  text-align: center;
+  color: black;
+}
+.coursePgButton {
+  /* border: solid blue; */
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  background-color: var(--customColor);
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+}
+.coursePgButton:hover {
+  background-color: black;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .coursePgImgTxt {
+    /* border: solid green; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+  }
+  .coursePgImgTxt > h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .coursePgImgTxt > p {
+    font-size: 20px;
+    text-align: justify;
+  }
+  .coursePgGerman {
+    /* border: solid red; */
+    width: 100%;
+    padding: 10px;
+  }
+  .coursePgCardContainer {
+    /* border: solid red; */
+    height: 100%;
+    min-width: 300px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+    .coursePgImgTxt {
+        /* border: solid green; */
+        position: absolute;
+        top: 0px;
+        right: 100px;
+        width: 40%;
+      }
+}
+@media screen and (min-width: 990px) {
+    .coursePgCardHead > h3 {
+        font-size: 26px;
+        text-align: center;
+        color: black;
+      }
+}

@@ -37,7 +37,7 @@ const Menu = () => {
           <Link to={"/"}>Home</Link>
         </li>
         <li className="menuDrop">
-          <a href="">Courses</a>
+          <Link to={"/courses"}>Courses</Link>
           <FontAwesomeIcon
             icon={faAngleDown}
             className="menuIcon"

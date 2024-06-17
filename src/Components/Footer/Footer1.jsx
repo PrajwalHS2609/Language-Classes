@@ -11,7 +11,7 @@ import {
   faLinkedin,
   faInstagram,
   faYoutube,
-  faWhatsapp
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer1 = () => {
@@ -151,7 +151,7 @@ const Footer1 = () => {
             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/channel/UC_MS3y-5o36akwsI6hNbA9Q">
+            <a href="https://api.whatsapp.com/send?phone=919538608484">
               <FontAwesomeIcon
                 icon={faWhatsapp}
                 className="footerIcon"
