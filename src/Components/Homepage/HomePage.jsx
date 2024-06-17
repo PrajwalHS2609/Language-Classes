@@ -11,6 +11,7 @@ import WhyUs from "./../WhyUs/WhyUs";
 import Trainers from "../Trainers/Trainers";
 import SocialVid from "../SocialVid/SocialVid";
 import PrizmaMap from "../PrizmaMap/PrizmaMap";
+import Reviews from "../Reviews/Reviews";
 
 const HomePage = () => {
   return (
@@ -23,6 +24,7 @@ const HomePage = () => {
       <GermanBegins />
       <WhyUs />
       <SocialVid />
+      <Reviews/>
       <GermanClasses />
       <Benefits />
       <PrizmaMap/>

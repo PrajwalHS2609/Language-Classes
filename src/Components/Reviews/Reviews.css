@@ -1,0 +1,9 @@
+.reviewsContainer{
+    /* border: solid red; */
+    width: 100%;height: 100%;
+    margin-top: 30px;
+}
+#reviews{
+    content: "Hello";
+    font-size: 30px;
+}
