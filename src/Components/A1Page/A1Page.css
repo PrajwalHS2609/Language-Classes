@@ -81,7 +81,7 @@
 .a1DetailsContainer {
   /* border: solid red; */
   display: flex;
-  width: 100%;
+  width: 50%;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
@@ -113,7 +113,7 @@
   padding: 20px;
 }
 .a1FlexContainer > h2 {
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
 }
 .a1FlexContainer > h2 > span {
@@ -122,13 +122,71 @@
 .a1FlexContainer > p {
   font-size: 20px;
   margin: 20px;
+  color: gray;
 }
 .a1FlexContainer > p > a {
   color: var(--customColor);
   text-decoration: none;
 }
+.a1HeadRespForm {
+  /* border: solid; */
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  .a1HeadImgContainer {
+    /* border: solid red; */
+    height: 40vh;
+  }
+  .a1HeadImgContainer > img {
+    object-fit: cover;
+    object-position: -100px 0px;
+  }
+  .a1HeadFormContent {
+    display: none;
+  }
+  .a1HeadTextContent {
+    /* border: solid green; */
+    top: 40%;
+    left: 0;
+    width: 60%;
+    height: 30%;
+  }
+  .a1HeadTextContent > h2 {
+    font-size: 20px;
+  }
+  .a1HeadRespForm {
+    display: flex;
+  }
 
+  .respFormContainer {
+    max-width: 300px;
+    display: flex;
+  }
+  .a1HeadContent2 {
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .a1TrainContainer {
+    /* border: solid blue; */
+   min-width: 300px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px rgb(153, 153, 153);
+  }
+  .a1TrainContainer > h3 {
+    font-size: 20px;
+    padding: 20px ;
+  }
+  .a1DetailsContainer {
+    /* border: solid red; */
+    width: 100%;
+  }
 }
 @media screen and (min-width: 990px) {
   .a1HeadImgContainer {

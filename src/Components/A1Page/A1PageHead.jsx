@@ -19,7 +19,9 @@ const A1PageHead = () => {
         </div>
       </div>
       <div className="a1HeadContent1">
+        <div className="a1HeadRespForm">
         <RespForm />
+        </div>
         <h2>
           We train <span>Students</span> with all the aspects of the
           <span> Language</span>

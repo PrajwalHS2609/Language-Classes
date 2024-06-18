@@ -87,9 +87,9 @@ const Menu = () => {
         <div className="respMenuScroll">
           <ul>
             <h1>
-              <a onClick={hideSideBar} to={"/"}>
+              <Link onClick={hideSideBar} to={"/"}>
                 Home
-              </a>
+              </Link>
             </h1>
             <h1 className="cross">
               <FontAwesomeIcon
@@ -101,9 +101,9 @@ const Menu = () => {
           </ul>
           <ul className="serviceDrop">
             <h1>
-              <a onClick={hideSideBar} to={"/service"}>
+              <Link onClick={hideSideBar} to={"/courses"}>
                 Courses
-              </a>
+              </Link>
               <FontAwesomeIcon
                 onClick={handleDropDown}
                 icon={faAngleDown}
@@ -113,9 +113,9 @@ const Menu = () => {
             <span className="respMenuSpan" ref={dropRef}>
               <li>
                 <h2>
-                  <a onClick={hideSideBar} to={"/hair-salon"}>
+                  <Link onClick={hideSideBar} to={"/a1"}>
                     A1 Level
-                  </a>
+                  </Link>
                 </h2>
               </li>
               <li>

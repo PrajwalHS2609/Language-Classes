@@ -19,13 +19,11 @@ const A1Page = () => {
       <A1PageMain />
       <A1Flexibility/>
       <OnlineExam />
-      <CoursesOnline />
       <GermanBegins />
       <WhyUs />
       <SocialVid />
       <Reviews />
-      <GermanClasses />
-      <Benefits />
+     <Benefits />
       <PrizmaMap />
     </div>
   );
