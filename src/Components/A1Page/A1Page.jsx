@@ -9,7 +9,6 @@ import GermanBegins from "../GermanBegins/GermanBegins";
 import WhyUs from "../WhyUs/WhyUs";
 import SocialVid from "../SocialVid/SocialVid";
 import Reviews from "../Reviews/Reviews";
-import GermanClasses from "../GermanClasses/GermanClasses";
 import Benefits from "../Benefits/Benefits";
 import PrizmaMap from "../PrizmaMap/PrizmaMap";
 const A1Page = () => {

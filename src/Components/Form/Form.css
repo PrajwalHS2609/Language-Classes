@@ -163,7 +163,7 @@
   flex-direction: column;
 }
 .respFormContainer > form > fieldset > legend {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   color: var(--customColor);
   /* border: solid black; */
@@ -186,6 +186,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  background-color: var(--customColor2);
   gap: 30px;
 }
 
@@ -197,6 +198,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--customColor2);
+
 }
 
 .respFormContainer > form > fieldset > table > tr > td > input {
@@ -205,6 +208,7 @@
   height: 90%;
   border: none;
   outline: none;
+  background-color: var(--customColor2);
 }
 .respFormContainer > form > fieldset > table > tr > td > select {
   border: none;
@@ -212,6 +216,8 @@
   width: 90%;
   color: grey;
   font-size: 100%;
+  background-color: var(--customColor2);
+
 }
 .respFormContainer > form > fieldset > table > tr > td > select > option {
   color: grey;

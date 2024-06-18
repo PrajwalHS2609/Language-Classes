@@ -1,8 +1,8 @@
 import React from "react";
 import "./A2Page.css";
 import FormMain from "../Form/FormMain";
-import A2 from "./../../Media/A2.png"
-import A1Train from './../A1Page/A1Train';
+import A2 from "./../../Media/A2.png";
+import A1Train from "./../A1Page/A1Train";
 import RespForm from "../Form/RespForm";
 const A2PageHead = () => {
   return (
@@ -20,6 +20,9 @@ const A2PageHead = () => {
       </div>
 
       <div className="a2HeadContent1">
+        <div className="a1HeadRespForm">
+          <RespForm />
+        </div>  
         <h2>
           We train <span>Students</span> with all the aspects of the
           <span> Language</span>
