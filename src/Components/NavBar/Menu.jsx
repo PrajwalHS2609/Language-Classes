@@ -54,14 +54,14 @@ const Menu = () => {
               </Link>
             </li>
             <li>
-              <a className="list" href="">
+              <Link className="list" to={"/b1"}>
                 B1 Level
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="list" href="">
+              <Link className="list" to={"/b2"}>
                 B2 Level
-              </a>
+              </Link>
             </li>
           </ul>
         </li>
@@ -120,23 +120,23 @@ const Menu = () => {
               </li>
               <li>
                 <h2>
-                  <a onClick={hideSideBar} to={"/nails-salon"}>
+                  <Link onClick={hideSideBar} to={"/a2"}>
                     A2 Level
-                  </a>
+                  </Link>
                 </h2>
               </li>
               <li>
                 <h2>
-                  <a onClick={hideSideBar} to={"/facial"}>
+                  <Link onClick={hideSideBar} to={"/b1"}>
                     B1 Level
-                  </a>
+                  </Link>
                 </h2>
               </li>
               <li>
                 <h2>
-                  <a onClick={hideSideBar} to={"/beauty-essentials"}>
+                  <Link onClick={hideSideBar} to={"/b2"}>
                     B2 Level
-                  </a>
+                  </Link>
                 </h2>
               </li>
             </span>

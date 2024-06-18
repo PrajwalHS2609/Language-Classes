@@ -10,42 +10,42 @@ const CoursePageMain = () => {
           "https://scuola.vamtam.com/wp-content/uploads/2020/01/h-77-453x453.jpg"
         }
         head="German Course Level A1"
-        para=""
+        link="/a1"
       />
       <CoursePageCard
         img={
           "https://scuola.vamtam.com/wp-content/uploads/2020/03/campaign-creators-K1Sq9qG-c70-unsplash-453x453.jpg"
         }
         head="German Course Level A2"
-        para=""
+        link="/a2"
       />
       <CoursePageCard
         img={
           "https://scuola.vamtam.com/wp-content/uploads/2020/01/h-69-466x466.jpg"
         }
         head="German Course Level  B1"
-        para=""
+        link="/b1"
       />
       <CoursePageCard
         img={
           "https://scuola.vamtam.com/wp-content/uploads/2020/01/h-77-453x453.jpg"
         }
         head="German Course Level B2"
-        para=""
+        link="/b2"
       />
       <CoursePageCard
         img={
           "https://scuola.vamtam.com/wp-content/uploads/2020/03/campaign-creators-K1Sq9qG-c70-unsplash-453x453.jpg"
         }
         head="German Course Level C1"
-        para=""
+        link="/c1"
       />
       <CoursePageCard
         img={
           "https://scuola.vamtam.com/wp-content/uploads/2020/01/h-69-466x466.jpg"
         }
         head="German Course Level C2"
-        para=""
+        link="c2"
       />
     </div>
   );

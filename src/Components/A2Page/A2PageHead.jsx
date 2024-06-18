@@ -20,7 +20,7 @@ const A2PageHead = () => {
       </div>
 
       <div className="a2HeadContent1">
-        <div className="a1HeadRespForm">
+        <div className="a2HeadRespForm">
           <RespForm />
         </div>  
         <h2>

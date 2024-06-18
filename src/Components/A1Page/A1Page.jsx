@@ -11,18 +11,20 @@ import SocialVid from "../SocialVid/SocialVid";
 import Reviews from "../Reviews/Reviews";
 import Benefits from "../Benefits/Benefits";
 import PrizmaMap from "../PrizmaMap/PrizmaMap";
+import A1 from "./../../Media/A1.png";
+
 const A1Page = () => {
   return (
     <div>
-      <A1PageHead />
+      <A1PageHead img={A1} head="A1" />
       <A1PageMain />
-      <A1Flexibility/>
+      <A1Flexibility />
       <OnlineExam />
       <GermanBegins />
       <WhyUs />
       <SocialVid />
       <Reviews />
-     <Benefits />
+      <Benefits />
       <PrizmaMap />
     </div>
   );

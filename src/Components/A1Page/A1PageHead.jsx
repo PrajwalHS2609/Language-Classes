@@ -4,17 +4,17 @@ import A1Train from "./A1Train";
 import FormMain from "../Form/FormMain";
 import A1 from "./../../Media/A1.png";
 import RespForm from "../Form/RespForm";
-const A1PageHead = () => {
+const A1PageHead = (props) => {
   return (
     <div className="a1HeadContainer">
       <div className="a1HeadImgContainer">
-        <img src={A1} alt="" />
+        <img src={props.img} alt="" />
         <div className="a1HeadFormContent">
           <FormMain />
         </div>
         <div className="a1HeadTextContent">
           <h2>
-            A1 <span>German classes</span> in Bangalore
+            {props.head} <span>German classes</span> in Bangalore
           </h2>
         </div>
       </div>
