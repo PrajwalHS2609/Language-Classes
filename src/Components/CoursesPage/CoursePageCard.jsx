@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const CoursePageCard = (props) => {
   return (
     <div className="coursePgCardContainer">
-        <Link to={"/"}>
+        <Link to={"/a1"}>
       <div className="coursePgCardWrapper">
         <div className="coursePgCardImg">
           <img

@@ -8,6 +8,10 @@ import Reviews from "../Reviews/Reviews";
 import GermanClasses from "../GermanClasses/GermanClasses";
 import Benefits from "../Benefits/Benefits";
 import PrizmaMap from "../PrizmaMap/PrizmaMap";
+import CourseDetails from "./CourseDetails/CourseDetails";
+import GermanBegins from "../GermanBegins/GermanBegins";
+import OnlineExam from "../OnlineExam/OnlineExam";
+import CoursesOnline from "../CoursesOnline/CoursesOnline";
 const CoursesPage = () => {
   return (
     <div className="coursesPageContainer">
@@ -34,6 +38,9 @@ const CoursesPage = () => {
       </div>
       <CoursePgGermanClass />
       <CoursePageMain />
+      <OnlineExam />
+      <CoursesOnline />
+      <GermanBegins />
       <WhyUs />
       <SocialVid />
       <Reviews />

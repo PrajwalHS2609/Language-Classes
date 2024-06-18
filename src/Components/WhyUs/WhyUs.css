@@ -64,3 +64,19 @@
   font-size: 20px;
   text-align: center;
 }
+@media screen and (min-width:1200px) {
+  .whyUsCardContainer {
+    /* border: solid red; */
+    height: 200px;
+    width: 160px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .whyUsCardContentTxt > p {
+    font-size: 18px;
+    text-align: center;
+  }
+}

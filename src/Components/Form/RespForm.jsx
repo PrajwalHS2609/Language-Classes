@@ -1,11 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Form.css";
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-
-const FormMain = () => {
+const RespForm = () => {
   let [data, setData] = useState({
     userName: "",
     email: "",
@@ -30,7 +26,7 @@ const FormMain = () => {
     // window.location.href = mailtoLink;
   };
   return (
-    <div className="formMainContainer">
+    <div className="respFormContainer">
       <form action="" onSubmit={handleSubmit}>
         <fieldset>
           <legend>Start Speaking German</legend>
@@ -102,4 +98,4 @@ const FormMain = () => {
   );
 };
 
-export default FormMain;
+export default RespForm;

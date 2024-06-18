@@ -44,14 +44,14 @@ const Menu = () => {
           ></FontAwesomeIcon>
           <ul className="menuDropDown">
             <li>
-              <a className="list" href="">
+              <Link className="list" to={"/a1"}>
                 A1 Level
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="list" href="">
+              <Link className="list" to={"/a2"}>
                 A2 Level
-              </a>
+              </Link>
             </li>
             <li>
               <a className="list" href="">
