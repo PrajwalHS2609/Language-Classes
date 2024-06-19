@@ -64,9 +64,10 @@
 }
 .trainersCardContainer > ul > li {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   margin: 10px;
   margin-left: 50px;
+  line-height: 40px;
 }
 .trainersHeadContainer > h2 > span {
   color: var(--customColor);
