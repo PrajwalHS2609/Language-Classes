@@ -1,11 +1,10 @@
 import React from "react";
 import "./Form.css";
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const FormMain = () => {
+  let navigate = useNavigate();
   let [data, setData] = useState({
     userName: "",
     email: "",
@@ -28,6 +27,7 @@ const FormMain = () => {
     //   `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\n\n${requirement}`
     // )}`;
     // window.location.href = mailtoLink;
+    navigate("/thank-you");
   };
   return (
     <div className="formMainContainer">
@@ -93,7 +93,7 @@ const FormMain = () => {
               </td>
             </tr>
             <button className="sub" type="handlesubmit">
-              <Link to="/courses"> Book Now</Link>
+              Book Now
             </button>
           </table>
         </fieldset>

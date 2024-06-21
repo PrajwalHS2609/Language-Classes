@@ -2,19 +2,20 @@ import React from "react";
 import "./A1Page.css";
 import A1Train from "./A1Train";
 import FormMain from "../Form/FormMain";
-import A1 from "./../../Media/A1.png";
 import RespForm from "../Form/RespForm";
+import WhyBlock from "../WhyBlock/WhyBlock";
 const A1PageHead = (props) => {
   return (
     <div className="a1HeadContainer">
       <div className="a1HeadImgContainer">
         <img src={props.img} alt="" />
+        {/* <WhyBlock/> */}
         <div className="a1HeadFormContent">
           <FormMain />
         </div>
         <div className="a1HeadTextContent">
           <h2>
-            {props.head} <span>German classes</span> in Bangalore
+            {props.head} <span>GERMAN CLASSES</span> IN BANGALORE
           </h2>
         </div>
       </div>

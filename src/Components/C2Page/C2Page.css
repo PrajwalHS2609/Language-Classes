@@ -1,5 +1,5 @@
 .c2DetailsContainer {
-  border: solid red;
+  /* border: solid red; */
   display: flex;
   width: 50%;
   justify-content: flex-start;
@@ -42,11 +42,11 @@
   /* border: solid blue; */
   padding: 20px;
 }
-.c2FlexContainer > h2 {
+.c2FlexContainer > h1 {
   font-size: 40px;
   text-align: center;
 }
-.c2FlexContainer > h2 > span {
+.c2FlexContainer > h1 > span {
   color: var(--customColor);
 }
 .c2FlexContainer > p {

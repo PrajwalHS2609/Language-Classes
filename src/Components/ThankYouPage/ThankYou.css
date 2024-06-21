@@ -1,0 +1,19 @@
+.thankYouPageContainer {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+}
+.thankYouPageContainer > img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+.thankYouPageContainer > p {
+    width: 90%;
+  font-size: 30px;
+  text-align: center;
+}

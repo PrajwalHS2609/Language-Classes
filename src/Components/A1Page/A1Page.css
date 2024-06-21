@@ -20,7 +20,7 @@
   left: 0;
   width: 30%;
   height: 30%;
-  background-color: #e91c1cc1;
+  background-color: #e91c1ca0;
 }
 .a1HeadTextContent > h2 {
   color: white;
@@ -86,7 +86,16 @@
   align-items: flex-start;
   flex-direction: column;
   padding-left: 0px;
-  background-color: var(--customColor2);
+  /* background: repeating-linear-gradient(
+    45deg,
+    #fff6f4,
+    #fff6f4 10px,
+    #f2eae9 10px,
+    #f2eae9 20px
+  ); */
+  /* background-image: url("./../../Media/backgroundRed.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
   padding: 20px;
 }
 .a1DetailsContainer > ul > li {
@@ -142,7 +151,8 @@
   }
   .a1HeadImgContainer > img {
     object-fit: cover;
-    width: 100%;height: 100%;
+    width: 100%;
+    height: 100%;
     object-position: 40% 0;
   }
   .a1HeadFormContent {
@@ -175,20 +185,20 @@
   }
   .a1TrainContainer {
     /* border: solid blue; */
-   min-width: 300px;
+    min-width: 300px;
     flex-wrap: wrap;
     box-shadow: 0 0 10px rgb(153, 153, 153);
   }
   .a1TrainContainer > h3 {
     font-size: 20px;
-    padding: 20px ;
+    padding: 20px;
   }
   .a1DetailsContainer {
     /* border: solid red; */
     width: 100%;
   }
 }
-@media screen and (min-width:768px) and (max-width:990px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
   .a1HeadImgContainer {
     /* border: solid red; */
     height: 80vh;

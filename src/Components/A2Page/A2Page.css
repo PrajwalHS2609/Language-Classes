@@ -111,11 +111,11 @@
   /* border: solid blue; */
   padding: 20px;
 }
-.a2FlexContainer > h2 {
+.a2FlexContainer > h1 {
   font-size: 40px;
   text-align: center;
 }
-.a2FlexContainer > h2 > span {
+.a2FlexContainer > h1 > span {
   color: var(--customColor);
 }
 .a2FlexContainer > p {

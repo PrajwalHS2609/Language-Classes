@@ -9,12 +9,16 @@ import Benefits from "../Benefits/Benefits";
 import PrizmaMap from "../PrizmaMap/PrizmaMap";
 import A1PageHead from "../A1Page/A1PageHead";
 import B2Main from "./B2Main.jsx";
+import B2Flexibility from "./B2Flexibility.jsx";
+import B2Why from "./B2Why/B2Why.jsx";
 
 const B2Page = () => {
   return (
     <div>
       <A1PageHead img={B2} head="B2" />
       <B2Main />
+      <B2Flexibility/>
+      <B2Why/>
       <OnlineExam />
       <GermanBegins />
       <WhyUs />

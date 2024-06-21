@@ -13,6 +13,7 @@ import {
   faYoutube,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer1 = () => {
   return (
@@ -47,27 +48,27 @@ const Footer1 = () => {
           <h3>Courses</h3>
           <li>
             {" "}
-            <a href="">German A1 Level</a>
+            <Link  to={"/a1"}  >German A1 Level</Link>
           </li>
           <li>
             {" "}
-            <a href="">German A2 Level</a>
+            <Link   to={"/a2"} >German A2 Level</Link>
           </li>
           <li>
             {" "}
-            <a href="">German B1 Level</a>
+            <Link to={"/b1"} >German B1 Level</Link>
           </li>
           <li>
             {" "}
-            <a href="">German B2 Level</a>
+            <Link to={"/b2"} >German B2 Level</Link>
           </li>
           <li>
             {" "}
-            <a href="">German C1 Level</a>
+            <Link to={"/c1"} >German C1 Level</Link>
           </li>
           <li>
             {" "}
-            <a href="">German C2 Level</a>
+            <Link to={"/c2"} >German C2 Level</Link>
           </li>
           <li>
             {" "}

@@ -116,10 +116,10 @@
 .coursePgCardContainer {
   /* border: solid red; */
   height: 100%;
-  width: 25%;
+  width: 20%;
   overflow: hidden;
   padding: 0px;
-  margin: 20px;
+  margin: 40px;
 }
 .coursePgCardContainer > a {
   text-decoration: none;
@@ -143,11 +143,14 @@
 .coursePgCardImg {
   /* border: solid blue; */
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .coursePgCardImg > img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 .coursePgCardHead {
   /* border: solid red; */

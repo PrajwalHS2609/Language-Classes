@@ -5,13 +5,13 @@ import CoursesOnline from "../CoursesOnline/CoursesOnline";
 import GermanBegins from "../GermanBegins/GermanBegins";
 import GermanClasses from "../GermanClasses/GermanClasses";
 import Benefits from "../Benefits/Benefits";
-import Footer from "../Footer/Footer";
 import OnlineExam from "../OnlineExam/OnlineExam";
 import WhyUs from "./../WhyUs/WhyUs";
 import Trainers from "../Trainers/Trainers";
 import SocialVid from "../SocialVid/SocialVid";
 import PrizmaMap from "../PrizmaMap/PrizmaMap";
 import Reviews from "../Reviews/Reviews";
+import Testimonial from "../Testimonial/Testimonial";
 
 const HomePage = () => {
   return (
@@ -27,6 +27,7 @@ const HomePage = () => {
       <Reviews/>
       <GermanClasses />
       <Benefits />
+      <Testimonial/>
       <PrizmaMap/>
     </div>
   );

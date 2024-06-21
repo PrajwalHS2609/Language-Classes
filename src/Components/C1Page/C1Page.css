@@ -31,11 +31,11 @@
     /* border: solid blue; */
     padding: 20px;
   }
-  .c1FlexContainer > h2 {
+  .c1FlexContainer > h1 {
     font-size: 40px;
     text-align: center;
   }
-  .c1FlexContainer > h2 > span {
+  .c1FlexContainer > h1 > span {
     color: var(--customColor);
   }
   .c1FlexContainer > p {
