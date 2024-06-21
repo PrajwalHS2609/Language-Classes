@@ -72,7 +72,7 @@ const Menu = () => {
           <a href="">About</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <Link to={"/contact-us"}>Contact</Link>
         </li>
         <div className="menuContent">
           <li>
@@ -157,9 +157,9 @@ const Menu = () => {
           </ul>
           <ul>
             <h1>
-              <a onClick={hideSideBar} to={"/franchise"}>
+              <Link onClick={hideSideBar} to={"/contact-us"}>
                 Contact
-              </a>
+              </Link>
             </h1>
           </ul>
           <div className="respMenuGap">

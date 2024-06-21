@@ -16,6 +16,7 @@ import B2Page from "./Components/B2Page/B2Page";
 import C1Page from "./Components/C1Page/C1Page";
 import C2Page from "./Components/C2Page/C2Page";
 import ThankYouPage from "./Components/ThankYouPage/ThankYouPage";
+import ContactUs from "./Components/ContactUs/ContactUs";
 const App = () => {
   return (
     <div className="appContainer">
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/b2" element={<B2Page />} />
           <Route path="/c1" element={<C1Page />} />
           <Route path="/c2" element={<C2Page />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/terms-and-Conditions" element={<Terms />} />

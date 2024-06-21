@@ -1,14 +1,12 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import logo from "./../../Media/Logo Prizma Academy.png";
 const Logo = () => {
   return (
     <div className="logoContainer">
       <Link to={"/"}>
-        <img
-          src="https://germanclassesinbangalore.com/wp-content/uploads/2024/04/cropped-cropped-Logo-Prizma-Academy.png"
-          alt=""
-        />
+        <img src={logo} alt="" />
       </Link>
     </div>
   );
