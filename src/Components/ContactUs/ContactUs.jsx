@@ -4,6 +4,7 @@ import ContactUsMap from "./ContactUsMap";
 import contactUs from "./../../Media/contactUs.jpg";
 import ContactUsInfo from "./ContactUsInfo";
 import ContactUsForm from "./ContactUsForm";
+import PrizmaMap from "../PrizmaMap/PrizmaMap";
 const ContactUs = () => {
   return (
     <div className="contactUsContainer">
@@ -14,13 +15,13 @@ const ContactUs = () => {
         </div>
       </div> */}
       <div className="contactUsContent1">
-        <ContactUsInfo/>
+        <ContactUsInfo />
       </div>
       <div className="contactUsContent2">
-        <ContactUsForm/>
+        <ContactUsForm />
       </div>
       <div className="contactUsContent3">
-        <ContactUsMap />
+        <PrizmaMap />
       </div>
     </div>
   );

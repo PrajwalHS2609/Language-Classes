@@ -348,7 +348,7 @@
  @media screen and (min-width:1200px) {
   .logoContainer {
     /* border: solid; */
-    width: 12%;
+    max-width: 90px;
     height: 100%;
   }
   .menuDropDown {
