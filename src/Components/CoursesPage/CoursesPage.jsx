@@ -12,9 +12,19 @@ import CourseDetails from "./CourseDetails/CourseDetails";
 import GermanBegins from "../GermanBegins/GermanBegins";
 import OnlineExam from "../OnlineExam/OnlineExam";
 import CoursesOnline from "../CoursesOnline/CoursesOnline";
+import { Helmet } from "react-helmet";
 const CoursesPage = () => {
   return (
     <div className="coursesPageContainer">
+      <Helmet>
+        <title>
+          German Course in Bangalore | A1 German Course for Beginners Near Me
+        </title>
+        <meta
+          name="description"
+          content="German Course in Bangalore for Working Professionals & Students on Weekday & Weekends. Book A Demo Class Today!"
+        />
+      </Helmet>
       <div className="coursePageImg">
         <img
           src="https://images.unsplash.com/photo-1548783094-f92d7c8ae2d3?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

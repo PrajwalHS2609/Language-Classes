@@ -10,12 +10,42 @@ import c2Lvl from "./../../Media/C2 Level.png";
 const CoursePageMain = () => {
   return (
     <div className="coursePgMainContainer">
-      <CoursePageCard img={a1Lvl} head="German Course Level A1" link="/a1" />
-      <CoursePageCard img={a2Lvl} head="German Course Level A2" link="/a2" />
-      <CoursePageCard img={b1Lvl} head="German Course Level  B1" link="/b1" />
-      <CoursePageCard img={b2Lvl} head="German Course Level B2" link="/b2" />
-      <CoursePageCard img={c1Lvl} head="German Course Level C1" link="/c1" />
-      <CoursePageCard img={c2Lvl} head="German Course Level C2" link="/c2" />
+      <CoursePageCard
+        img={a1Lvl}
+        head="German Course A1 Level"
+        link="/a1-german-course"
+        level="Level Beginner"
+      />
+      <CoursePageCard
+        img={a2Lvl}
+        head="German Course A2 Level"
+        link="/a2-german-course"
+        level="Level Beginner"
+      />
+      <CoursePageCard
+        img={b1Lvl}
+        head="German Course B1 Level"
+        link="/b1-german-course"
+        level="Level Intermediate"
+      />
+      <CoursePageCard
+        img={b2Lvl}
+        head="German Course B2 Level"
+        link="/b2-german-course"
+        level="Level Intermediate"
+      />
+      <CoursePageCard
+        img={c1Lvl}
+        head="German Course C1 Level"
+        link="/c1-german-course"
+        level="Level Advance"
+      />
+      <CoursePageCard
+        img={c2Lvl}
+        head="German Course C2 Level"
+        link="/c2-german-course"
+        level="Level Advance"
+      />
     </div>
   );
 };

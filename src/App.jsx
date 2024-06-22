@@ -17,6 +17,8 @@ import C1Page from "./Components/C1Page/C1Page";
 import C2Page from "./Components/C2Page/C2Page";
 import ThankYouPage from "./Components/ThankYouPage/ThankYouPage";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import AboutUs from "./Components/AboutUs/AboutUs";
+import ExamPrep from "./Components/ExamPrep/ExamPrep";
 const App = () => {
   return (
     <div className="appContainer">
@@ -26,12 +28,14 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/courses" element={<CoursesPage />} />
-          <Route path="/a1" element={<A1Page />} />
-          <Route path="/a2" element={<A2Page />} />
-          <Route path="/b1" element={<B1Page />} />
-          <Route path="/b2" element={<B2Page />} />
-          <Route path="/c1" element={<C1Page />} />
-          <Route path="/c2" element={<C2Page />} />
+          <Route path="/a1-german-course" element={<A1Page />} />
+          <Route path="/a2-german-course" element={<A2Page />} />
+          <Route path="/b1-german-course" element={<B1Page />} />
+          <Route path="/b2-german-course" element={<B2Page />} />
+          <Route path="/c1-german-course" element={<C1Page />} />
+          <Route path="/c2-german-course" element={<C2Page />} />
+          <Route path="/exam-preparation" element={<ExamPrep/>} />
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />

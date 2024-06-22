@@ -1,0 +1,121 @@
+.examPrepContainer {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 30px;
+  gap: 20px;
+}
+
+.examPrepContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -10;
+}
+.examPrepHeadContainer > h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.examPrepHeadContainer > h2 > span {
+  color: var(--customColor);
+}
+.examPrepHeadContainer > p {
+  width: 90%;
+  font-size: 20px;
+}
+.examPrepHeadContainer > h3 {
+  /* border: solid ; */
+  font-size: 25px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.examPrepHeadContainer > h3 > span {
+  color: var(--customColor);
+}
+.examPrepMain {
+  /* border: solid brown; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.a1ExamPrepCover {
+  /* border: solid green; */
+  width: 40%;
+  height: 450px;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.329);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.627);
+  box-shadow: inset 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.a1ExamPrepImg {
+  /* border: solid red; */
+  width: 100%;
+}
+.a1ExamPrepCover > h3 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+.a1ExamPrepCover > h3 > span {
+  color: var(--customColor);
+}
+.a1ExamPrepCover > p {
+  font-size: 20px;
+  width: 90%;
+  text-align: center;
+  font-weight: bold;
+  color: var(--customColor);
+}
+.a1ExamPrepCover > ul > li {
+  font-size: 20px;
+  margin-left: 30px;
+  padding: 10px;
+  text-align: justify;
+  color: white;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .a1ExamPrepCover {
+    /* border: solid green; */
+    min-width: 300px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .a1ExamPrepCover {
+    /* border: solid green; */
+    min-width: 400px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 990px) {
+  .a1ExamPrepCover {
+    /* border: solid green; */
+    min-width: 450px;
+    height: 540px;
+  }
+}
+  @media screen and (min-width:1200px) {
+    .a1ExamPrepCover {
+      /* border: solid green; */
+      max-width: 450px;
+      height: 500px;
+    }
+  }
+

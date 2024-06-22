@@ -12,10 +12,20 @@ import SocialVid from "../SocialVid/SocialVid";
 import PrizmaMap from "../PrizmaMap/PrizmaMap";
 import Reviews from "../Reviews/Reviews";
 import Testimonial from "../Testimonial/Testimonial";
+import { Helmet } from "react-helmet";
 
 const HomePage = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          Best German Classes in Bangalore for Working Professionals & Students
+        </title>
+        <meta
+          name="description"
+          content="Best German Classes in Bangalore for Working Professionals & Students on Weekday & Weekends. Book A Demo Class Today!							"
+        />
+      </Helmet>
       <HomeHeadingVid />
       <CoursesBlock />
       <Trainers />
@@ -24,11 +34,10 @@ const HomePage = () => {
       <GermanBegins />
       <WhyUs />
       <SocialVid />
-      <Reviews/>
+      <Reviews />
       <GermanClasses />
       <Benefits />
-      <Testimonial/>
-      <PrizmaMap/>
+      <PrizmaMap />
     </div>
   );
 };

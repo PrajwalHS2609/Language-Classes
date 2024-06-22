@@ -84,7 +84,7 @@ const ContactUsForm = () => {
             <tr>
               {/* <label htmlFor="detail">Details :</label> */}
               <td>
-                <textarea name="" id=""></textarea>
+                <textarea name="" id=""  placeholder="Message"></textarea>
               </td>
             </tr>
             <button className="sub" type="handlesubmit">

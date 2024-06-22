@@ -173,6 +173,9 @@
   padding: 10px;
   color: white;
 }
+.coursePgButton > p {
+  font-size: 20px;
+}
 .coursePgButton:hover {
   background-color: black;
 }

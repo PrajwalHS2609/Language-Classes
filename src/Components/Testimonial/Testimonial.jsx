@@ -7,7 +7,7 @@ import TestimonialFooter from './TestimonialFooter';
 const Testimonial = () => {
   return (
     <div className='testimonialContainer'>
-      <TestimonialHead/>
+      {/* <TestimonialHead/> */}
       <TestimonialMain/>
       <TestimonialFooter/>
     </div>

@@ -11,13 +11,23 @@ import Benefits from "../Benefits/Benefits";
 import PrizmaMap from "../PrizmaMap/PrizmaMap";
 import B1Flexibility from "./B1Flexibility";
 import B1Why from "./B1Why/B1Why";
+import { Helmet } from "react-helmet";
 const B1Page = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          B1 Level German Classes in Bangalore | B1 German Course Near Me
+        </title>
+        <meta
+          name="description"
+          content="B1 German Classes in Bangalore for Working Professionals & Students on Weekday & Weekends at Affordable Price."
+        />
+      </Helmet>
       <A1PageHead img={B1} head="B2" />
       <B1Main />
-      <B1Flexibility/>
-      <B1Why/>
+      <B1Flexibility />
+      <B1Why />
       <OnlineExam />
       <GermanBegins />
       <WhyUs />

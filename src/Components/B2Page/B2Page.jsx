@@ -11,14 +11,24 @@ import A1PageHead from "../A1Page/A1PageHead";
 import B2Main from "./B2Main.jsx";
 import B2Flexibility from "./B2Flexibility.jsx";
 import B2Why from "./B2Why/B2Why.jsx";
+import { Helmet } from "react-helmet";
 
 const B2Page = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          B2 Level German Classes in Bangalore | B2 German Course Near Me
+        </title>
+        <meta
+          name="description"
+          content="B2 German Classes in Bangalore for Working Professionals & Students on Weekday & Weekends at Affordable Price."
+        />
+      </Helmet>
       <A1PageHead img={B2} head="B2" />
       <B2Main />
-      <B2Flexibility/>
-      <B2Why/>
+      <B2Flexibility />
+      <B2Why />
       <OnlineExam />
       <GermanBegins />
       <WhyUs />

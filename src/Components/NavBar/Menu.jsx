@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./Navbar.css";
-  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-  import { faAngleDown, faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown, faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 const Menu = () => {
   let [drop, setDrop] = useState(false);
@@ -44,32 +44,32 @@ const Menu = () => {
           ></FontAwesomeIcon>
           <ul className="menuDropDown">
             <li>
-              <Link className="list" to={"/a1"}>
+              <Link className="list" to={"/a1-german-course"}>
                 A1 Level
               </Link>
             </li>
             <li>
-              <Link className="list" to={"/a2"}>
+              <Link className="list" to={"/a2-german-course"}>
                 A2 Level
               </Link>
             </li>
             <li>
-              <Link className="list" to={"/b1"}>
+              <Link className="list" to={"/b1-german-course"}>
                 B1 Level
               </Link>
             </li>
             <li>
-              <Link className="list" to={"/b2"}>
+              <Link className="list" to={"/b2-german-course"}>
                 B2 Level
               </Link>
             </li>
           </ul>
         </li>
         <li>
-          <a href="">Exam Preparation</a>
+          <Link to={"/exam-preparation"}>Exam Preparation</Link>
         </li>
         <li>
-          <a href="">About</a>
+          <Link to={"/about-us"}>About</Link>
         </li>
         <li>
           <Link to={"/contact-us"}>Contact</Link>
@@ -113,28 +113,28 @@ const Menu = () => {
             <span className="respMenuSpan" ref={dropRef}>
               <li>
                 <h2>
-                  <Link onClick={hideSideBar} to={"/a1"}>
+                  <Link onClick={hideSideBar} to={"/a1-german-course"}>
                     A1 Level
                   </Link>
                 </h2>
               </li>
               <li>
                 <h2>
-                  <Link onClick={hideSideBar} to={"/a2"}>
+                  <Link onClick={hideSideBar} to={"/a2-german-course"}>
                     A2 Level
                   </Link>
                 </h2>
               </li>
               <li>
                 <h2>
-                  <Link onClick={hideSideBar} to={"/b1"}>
+                  <Link onClick={hideSideBar} to={"/b1-german-course"}>
                     B1 Level
                   </Link>
                 </h2>
               </li>
               <li>
                 <h2>
-                  <Link onClick={hideSideBar} to={"/b2"}>
+                  <Link onClick={hideSideBar} to={"/b2-german-course"}>
                     B2 Level
                   </Link>
                 </h2>
@@ -143,16 +143,16 @@ const Menu = () => {
           </ul>
           <ul>
             <h1>
-              <a onClick={hideSideBar} to={"/salon-membership"}>
+              <Link onClick={hideSideBar} to={"/exam-preparation"}>
                 Exam Preparation
-              </a>
+              </Link>
             </h1>
           </ul>
           <ul>
             <h1>
-              <a onClick={hideSideBar} to={"/shop"}>
+              <Link onClick={hideSideBar} to={"/about-us"}>
                 About
-              </a>
+              </Link>
             </h1>
           </ul>
           <ul>

@@ -10,15 +10,25 @@ import Reviews from "../Reviews/Reviews";
 import Benefits from "../Benefits/Benefits";
 import PrizmaMap from "../PrizmaMap/PrizmaMap";
 import C1Main from "./C1Main";
-import C1Flexibility from './C1Flexibility';
+import C1Flexibility from "./C1Flexibility";
 import C1Why from "./C1WhyPage/C1Why";
+import { Helmet } from "react-helmet";
 const C1Page = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          C1 Level German Classes in Bangalore | B2 German Course Near Me
+        </title>
+        <meta
+          name="description"
+          content="C1 German Classes in Bangalore for Working Professionals & Students on Weekday & Weekends at Affordable Price."
+        />
+      </Helmet>
       <A1PageHead img={C1} head="C1" />
       <C1Main />
-      <C1Flexibility/>
-      <C1Why/>
+      <C1Flexibility />
+      <C1Why />
       <OnlineExam />
       <GermanBegins />
       <WhyUs />
