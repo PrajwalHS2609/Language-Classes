@@ -1,4 +1,5 @@
 import React from "react";
+import AboutUsCard from "./AboutUsCard";
 
 const AboutUsMain = () => {
   return (
@@ -15,25 +16,26 @@ const AboutUsMain = () => {
             At Prizma Academy, we offer specialized foreign language courses for
             diverse needs:
           </h3>
-          <li>
-            Business Professionals: Courses designed for those aiming to conduct
-            business internationally.
-          </li>
-          <li>Students: Preparatory courses for AP language exams</li>
-          <li>
-            Language Enthusiasts: Programs to enhance grammar and writing
-            skills.
-          </li>
+          <div className="aboutusCardMain">
+            <AboutUsCard
+              head="Business Professionals: "
+              para="Courses designed for those aiming to conduct business internationally."
+            />
+            <AboutUsCard
+              head="Students :"
+              para="Preparatory courses for AP language exams"
+            />
+            <AboutUsCard
+              head="Language Enthusiasts: "
+              para="Programs to enhance grammar and writing skills."
+            />
+          </div>
         </ul>
         Our online learning platform allows you to attend foreign language
         classes from anywhere in the world, eliminating the need to visit a
         physical center. Our virtual classrooms enable interactive sessions
         where you and our expert trainers can meet online, leveraging integrated
         audio and webcam tools for an engaging learning experience.
-        <h3>
-          Join Prizma Academy and embark on your language learning journey
-          today!
-        </h3>
       </p>
     </div>
   );

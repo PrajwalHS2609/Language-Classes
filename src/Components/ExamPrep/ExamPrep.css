@@ -8,12 +8,23 @@
   padding: 30px;
   gap: 20px;
 }
+.examPrepContainerCover {
+  /* border: solid; */
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff6f42f;
+  z-index: -9 ;
+  top: 0;
+}
 
 .examPrepContainer > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
+  position: fixed;
+  top: 10px;
   z-index: -10;
 }
 .examPrepHeadContainer > h2 {
@@ -30,7 +41,7 @@
 .examPrepHeadContainer > h3 {
   /* border: solid ; */
   font-size: 25px;
-  color: white;
+  /* color: white; */
   padding: 20px;
   text-align: center;
 }
@@ -111,11 +122,10 @@
     height: 540px;
   }
 }
-  @media screen and (min-width:1200px) {
-    .a1ExamPrepCover {
-      /* border: solid green; */
-      max-width: 450px;
-      height: 500px;
-    }
+@media screen and (min-width: 1200px) {
+  .a1ExamPrepCover {
+    /* border: solid green; */
+    max-width: 450px;
+    height: 500px;
   }
-
+}

@@ -12,6 +12,7 @@ import A1PageHead from "../A1Page/A1PageHead";
 import A2Flexibility from "./A2Flexibility";
 import A2Why from "./A2Why/A2Why";
 import { Helmet } from "react-helmet";
+import A2Benefits from "./A2Benefits/A2Benefits";
 const A2Page = () => {
   return (
     <div>
@@ -28,7 +29,7 @@ const A2Page = () => {
       <WhyUs />
       <SocialVid />
       <Reviews />
-      <Benefits />
+      <A2Benefits />
       <PrizmaMap />
     </div>
   );

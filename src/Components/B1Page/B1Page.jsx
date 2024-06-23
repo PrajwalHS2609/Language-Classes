@@ -12,6 +12,7 @@ import PrizmaMap from "../PrizmaMap/PrizmaMap";
 import B1Flexibility from "./B1Flexibility";
 import B1Why from "./B1Why/B1Why";
 import { Helmet } from "react-helmet";
+import B1Benefits from "./B1Benefits/B1Benefits";
 const B1Page = () => {
   return (
     <div>
@@ -33,7 +34,7 @@ const B1Page = () => {
       <WhyUs />
       <SocialVid />
       <Reviews />
-      <Benefits />
+      <B1Benefits />
       <PrizmaMap />{" "}
     </div>
   );

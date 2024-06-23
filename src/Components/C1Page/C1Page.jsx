@@ -13,6 +13,7 @@ import C1Main from "./C1Main";
 import C1Flexibility from "./C1Flexibility";
 import C1Why from "./C1WhyPage/C1Why";
 import { Helmet } from "react-helmet";
+import C1Benefits from "./C1Benefits/C1Benefits";
 const C1Page = () => {
   return (
     <div>
@@ -34,7 +35,7 @@ const C1Page = () => {
       <WhyUs />
       <SocialVid />
       <Reviews />
-      <Benefits />
+      <C1Benefits />
       <PrizmaMap />
     </div>
   );

@@ -12,6 +12,7 @@ import C2Main from "./C2Main";
 import C2Flexibility from "./C2Flexibility";
 import C2Why from "./C2Why/C2Why";
 import { Helmet } from "react-helmet";
+import C2Benefits from "./C2Benefits/C2Benefits";
 const C2Page = () => {
   return (
     <div>
@@ -33,7 +34,7 @@ const C2Page = () => {
       <WhyUs />
       <SocialVid />
       <Reviews />
-      <Benefits />
+      <C2Benefits />
       <PrizmaMap />
     </div>
   );

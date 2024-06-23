@@ -12,6 +12,7 @@ import B2Main from "./B2Main.jsx";
 import B2Flexibility from "./B2Flexibility.jsx";
 import B2Why from "./B2Why/B2Why.jsx";
 import { Helmet } from "react-helmet";
+import B2Benefits from "./B2Benefits/B2Benefits.jsx";
 
 const B2Page = () => {
   return (
@@ -34,7 +35,7 @@ const B2Page = () => {
       <WhyUs />
       <SocialVid />
       <Reviews />
-      <Benefits />
+      <B2Benefits />
       <PrizmaMap />
     </div>
   );
