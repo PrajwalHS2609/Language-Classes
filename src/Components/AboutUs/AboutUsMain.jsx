@@ -1,6 +1,9 @@
 import React from "react";
 import AboutUsCard from "./AboutUsCard";
 import "./AboutUs.css";
+import business from "./../../Media/abtBusiness.png";
+import student from "./../../Media/abtStudents.png";
+import lang from "./../../Media/Language_Enthusiast.png"
 const AboutUsMain = () => {
   return (
     <div className="aboutUsMainContainer">
@@ -18,14 +21,17 @@ const AboutUsMain = () => {
           </h3>
           <div className="aboutusCardMain">
             <AboutUsCard
+              img={business}
               head="Business Professionals: "
               para="Courses designed for those aiming to conduct business internationally."
             />
             <AboutUsCard
+              img={student}
               head="Students :"
               para="Preparatory courses for AP language exams"
             />
             <AboutUsCard
+            img={lang}
               head="Language Enthusiasts: "
               para="Programs to enhance grammar and writing skills."
             />

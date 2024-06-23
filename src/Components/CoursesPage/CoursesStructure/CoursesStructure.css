@@ -1,0 +1,52 @@
+.coursesStrContainer {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.coursesStrContainer > h2 {
+  /* border: solid green; */
+  font-size: 30px;
+}
+.coursesStrContainer > h2 > span {
+  color: var(--customColor);
+}
+.coursesStrContainer > p {
+  font-size: 20px;
+}
+.coursesStrContent > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.coursesStrContent > ul > li {
+  /* border: solid red; */
+  font-size: 20px;
+  width: 70%;
+  list-style: none;
+  margin: 20px;
+}
+.coursesStrContent > ul > li > span {
+  color: var(--customColor);
+  font-weight: bolder;
+}
+.coursesStrWrapper {
+  /* border: solid black; */
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.coursesStrContent {
+  /* border: solid blue; */
+  width: 50%;
+}
+.coursesStrContent>img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
