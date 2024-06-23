@@ -1,6 +1,6 @@
 import React from "react";
 import AboutUsCard from "./AboutUsCard";
-
+import "./AboutUs.css";
 const AboutUsMain = () => {
   return (
     <div className="aboutUsMainContainer">
