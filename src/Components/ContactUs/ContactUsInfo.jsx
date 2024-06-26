@@ -1,13 +1,16 @@
 import React from "react";
 import "./ContactUs.css";
+import location from "./../../Media/Location.png"
+import mail from "./../../Media/Email.png"
+import phone from "./../../Media/Phone.png"
 const ContactUsInfo = () => {
   return (
     <div className="contactInfoContainer">
       <div className="contactInfoContent">
         <div className="contactInfoItem1">
           <img
-            src="https://keenitsolutions.com/products/wordpress/educavo/wp-content/uploads/2020/10/address.png"
-            alt=""
+            src={location}
+            alt="location"
           />
         </div>
         <div className="contactInfoItem2">
@@ -24,8 +27,8 @@ const ContactUsInfo = () => {
       <div className="contactInfoContent">
         <div className="contactInfoItem1">
           <img
-            src="https://keenitsolutions.com/products/wordpress/educavo/wp-content/uploads/2020/10/open-email.png"
-            alt=""
+            src={mail}
+            alt="mail"
           />
         </div>
         <div className="contactInfoItem2">
@@ -39,8 +42,8 @@ const ContactUsInfo = () => {
       <div className="contactInfoContent">
         <div className="contactInfoItem1">
           <img
-            src="https://keenitsolutions.com/products/wordpress/educavo/wp-content/uploads/2020/10/smartphone.png"
-            alt=""
+            src={phone}
+            alt="phone"
           />
         </div>
         <div className="contactInfoItem2">

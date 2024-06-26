@@ -1,12 +1,12 @@
 import React from "react";
 import "./ExamPrep.css";
-const ExamPara = () => {
+const ExamPrepPara = () => {
   return (
     <div className="examPrepParaContainer">
-      <h3>
+      <h2>
         German Exam Preparation in Bangalore: Master the Goethe Exam with Prizma
         Academy
-      </h3>
+      </h2>
       <p>
         Want to know how to prepare for the Goethe Exam? You have come to the
         right place!
@@ -32,4 +32,4 @@ const ExamPara = () => {
   );
 };
 
-export default ExamPara;
+export default ExamPrepPara;

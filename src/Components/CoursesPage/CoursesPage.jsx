@@ -14,6 +14,7 @@ import OnlineExam from "../OnlineExam/OnlineExam";
 import CoursesOnline from "../CoursesOnline/CoursesOnline";
 import { Helmet } from "react-helmet";
 import CoursesStructure from "./CoursesStructure/CoursesStructure";
+import TeachingMethod from "./TeachingMethod/TeachingMethod";
 const CoursesPage = () => {
   return (
     <div className="coursesPageContainer">
@@ -39,7 +40,7 @@ const CoursesPage = () => {
             We prepare you to read, write, speak, listen and learn the grammar
             of the German language across several levels – A1 – B2. German
             Language Course in Bangalore is designed to prepare you to write
-            certification exams. 
+            certification exams.
           </p>
           <div className="coursePgImgButton">
             <button>Enroll Now</button>
@@ -48,8 +49,9 @@ const CoursesPage = () => {
         </div>
       </div>
       <CoursePgGermanClass />
-      <CoursesStructure/>
       <CoursePageMain />
+      <CoursesStructure />
+      <TeachingMethod/>
       <OnlineExam />
       <CoursesOnline />
       <GermanBegins />
