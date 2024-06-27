@@ -4,10 +4,10 @@ const CoursePgGermanClass = () => {
   return (
     <div className="coursePgGerman">
       <div className="coursePgGermanHead">
-        <h2>
+        <h1>
           <span>German Courses </span> in Bangalore: Your Gateway to a World of
           Opportunities
-        </h2>
+        </h1>
       </div>
       <div className="coursePgGermanPara">
         <p>

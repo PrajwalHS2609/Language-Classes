@@ -84,11 +84,11 @@
   /* border: solid blue; */
   width: 90%;
 }
-.coursePgGermanHead > h2 {
-  text-align: start;
-  font-size: 30px;
+.coursePgGermanHead > h1 {
+  text-align: center;
+  font-size: 40px;
 }
-.coursePgGermanHead > h2 > span {
+.coursePgGermanHead > h1 > span {
   color: var(--customColor);
 }
 .coursePgGermanPara {

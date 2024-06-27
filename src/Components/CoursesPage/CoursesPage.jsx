@@ -58,7 +58,7 @@ const CoursesPage = () => {
       <WhyUs />
       <SocialVid />
       <Reviews />
-      <GermanClasses />
+      {/* <GermanClasses /> */}
       <Benefits />
       <PrizmaMap />
     </div>
