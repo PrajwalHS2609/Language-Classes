@@ -1,0 +1,27 @@
+.courseBenefitsContainer {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  gap: 10px;
+  padding: 10px;
+}
+.courseBenefitsContainer > h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.courseBenefitsContainer > h2 > span {
+  color: var(--customColor);
+}
+
+.courseBenefitsContainer > ul > li {
+  font-size: 20px;
+  margin: 20px;
+  color: grey;
+}
+.courseBenefitsContainer > ul > li>span{
+    color: var(--customColor);
+    font-weight: bold;
+}

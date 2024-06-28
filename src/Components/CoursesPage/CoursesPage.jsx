@@ -15,6 +15,7 @@ import CoursesOnline from "../CoursesOnline/CoursesOnline";
 import { Helmet } from "react-helmet";
 import CoursesStructure from "./CoursesStructure/CoursesStructure";
 import TeachingMethod from "./TeachingMethod/TeachingMethod";
+import CourseBenefits from "./CourseBenefits/CourseBenefits";
 const CoursesPage = () => {
   return (
     <div className="coursesPageContainer">
@@ -59,7 +60,7 @@ const CoursesPage = () => {
       <SocialVid />
       <Reviews />
       {/* <GermanClasses /> */}
-      <Benefits />
+      <CourseBenefits />
       <PrizmaMap />
     </div>
   );

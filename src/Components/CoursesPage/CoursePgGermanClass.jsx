@@ -1,4 +1,6 @@
 import React from "react";
+import Testimonial from './../Testimonial/Testimonial';
+import CourseTestimonial from "./CourseTestimonial/CourseTestimonial";
 
 const CoursePgGermanClass = () => {
   return (
@@ -19,6 +21,8 @@ const CoursePgGermanClass = () => {
           offers the best German course in Bangalore, tailored to meet the needs
           of every learner.
         </p>
+        <CourseTestimonial/>
+
       </div>
     </div>
   );
