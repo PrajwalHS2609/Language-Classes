@@ -145,7 +145,7 @@
   background-color: var(--customColor);
   width: 100%;
 }
-.respMenuScroll > ul > h1 {
+.respMenuScroll > ul > h2 {
   color: white;
   height: 80px;
   display: flex;
@@ -156,7 +156,7 @@
   font-weight: lighter;
   margin-left: 10px;
 }
-.respMenuScroll > ul > h2 {
+.respMenuScroll > ul > h3 {
   color: white;
   height: 10px;
   display: flex;
@@ -167,7 +167,7 @@
   font-weight: lighter;
   margin-left: 10px;
 }
-.respMenuScroll > ul > h1 > a {
+.respMenuScroll > ul > h2 > a {
   color: white;
   text-decoration: none;
 }
@@ -182,7 +182,7 @@
   width: 100%;
 }
 
-.respMenuScroll > ul > span > li > h2 {
+.respMenuScroll > ul > span > li > h3 {
   color: white;
   list-style: none;
   margin-left: 30px;
@@ -190,7 +190,7 @@
   font-family: monospace;
   font-weight: lighter;
 }
-.respMenuScroll > ul > span > li > h2 > a {
+.respMenuScroll > ul > span > li > h3 > a {
   text-decoration: none;
   color: var(--customColor);
 }

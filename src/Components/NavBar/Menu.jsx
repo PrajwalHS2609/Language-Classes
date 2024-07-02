@@ -86,21 +86,21 @@ const Menu = () => {
       <div className="respMenu">
         <div className="respMenuScroll">
           <ul>
-            <h1>
+            <h2>
               <Link onClick={hideSideBar} to={"/"}>
                 Home
               </Link>
-            </h1>
-            <h1 className="cross">
+            </h2>
+            <h2 className="cross">
               <FontAwesomeIcon
                 icon={faX}
                 onClick={hideSideBar}
                 className="respIcon"
               ></FontAwesomeIcon>
-            </h1>
+            </h2>
           </ul>
           <ul className="serviceDrop">
-            <h1>
+            <h2>
               <Link onClick={hideSideBar} to={"/courses"}>
                 Courses
               </Link>
@@ -109,58 +109,58 @@ const Menu = () => {
                 icon={faAngleDown}
                 className="respDropIcon"
               ></FontAwesomeIcon>
-            </h1>
+            </h2>
             <span className="respMenuSpan" ref={dropRef}>
               <li>
-                <h2>
+                <h3>
                   <Link onClick={hideSideBar} to={"/a1-german-course"}>
                     A1 Level
                   </Link>
-                </h2>
+                </h3>
               </li>
               <li>
-                <h2>
+                <h3>
                   <Link onClick={hideSideBar} to={"/a2-german-course"}>
                     A2 Level
                   </Link>
-                </h2>
+                </h3>
               </li>
               <li>
-                <h2>
+                <h3>
                   <Link onClick={hideSideBar} to={"/b1-german-course"}>
                     B1 Level
                   </Link>
-                </h2>
+                </h3>
               </li>
               <li>
-                <h2>
+                <h3>
                   <Link onClick={hideSideBar} to={"/b2-german-course"}>
                     B2 Level
                   </Link>
-                </h2>
+                </h3>
               </li>
             </span>
           </ul>
           <ul>
-            <h1>
+            <h2>
               <Link onClick={hideSideBar} to={"/exam-preparation"}>
                 Exam Preparation
               </Link>
-            </h1>
+            </h2>
           </ul>
           <ul>
-            <h1>
+            <h2>
               <Link onClick={hideSideBar} to={"/about-us"}>
                 About
               </Link>
-            </h1>
+            </h2>
           </ul>
           <ul>
-            <h1>
+            <h2>
               <Link onClick={hideSideBar} to={"/contact-us"}>
                 Contact
               </Link>
-            </h1>
+            </h2>
           </ul>
           <div className="respMenuGap">
             <button>
