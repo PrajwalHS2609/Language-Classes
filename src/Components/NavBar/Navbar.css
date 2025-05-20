@@ -61,6 +61,7 @@
   list-style: none;
   padding: 10px;
   font-size: 20px;
+  cursor: pointer;
 }
 .menuContent > li > a {
   text-decoration: none;
