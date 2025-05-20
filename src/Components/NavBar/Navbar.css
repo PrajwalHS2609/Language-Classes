@@ -12,7 +12,7 @@
 }
 .logoContainer {
   /* border: solid; */
-  width: 12%;
+  width: fit-content;
   height: 100%;
 }
 .logoContainer > a > img {
@@ -233,7 +233,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: white;
+  background-color: white;
+  color: var(--customColor);
 }
 .respMenuGap > button > a {
   color: var(--customColor);
@@ -254,7 +255,7 @@
   }
   .logoContainer {
     /* border: solid; */
-   min-width: 160px;
+    min-width: 160px;
     height: 80%;
   }
   .menuContainer {
@@ -280,7 +281,7 @@
   }
   .logoContainer {
     /* border: solid; */
-   min-width: 200px;
+    min-width: 200px;
     height: 100%;
   }
   .respMenu {
@@ -342,10 +343,9 @@
   .menuDropDown {
     /* border: solid; */
     top: 55px;
-
   }
 }
- @media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .logoContainer {
     /* border: solid; */
     max-width: 90px;
@@ -354,6 +354,5 @@
   .menuDropDown {
     /* border: solid; */
     top: 55px;
-
   }
- }
+}

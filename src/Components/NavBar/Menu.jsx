@@ -6,7 +6,10 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   let [drop, setDrop] = useState(false);
   let dropRef = useRef();
-
+  const handlePopUp = () => {
+    const bookPopUpElement = document.querySelector(".popup-container");
+    bookPopUpElement.style.display = "flex";
+  };
   let showSideBar = () => {
     const sideBar = document.querySelector(".respMenu");
     sideBar.style.display = "flex";
@@ -75,9 +78,7 @@ const Menu = () => {
           <Link to={"/contact-us"}>Contact</Link>
         </li>
         <div className="menuContent">
-          <li>
-            <a href="/">Speak to advisor</a>
-          </li>
+          <li onClick={handlePopUp}>Speak to advisor</li>
         </div>
       </div>
       <ul onClick={showSideBar} className="mainMenu">
@@ -162,10 +163,8 @@ const Menu = () => {
               </Link>
             </h2>
           </ul>
-          <div className="respMenuGap">
-            <button>
-              <a href="/">Speak to advisor</a>
-            </button>
+          <div className="respMenuGap" onClick={hideSideBar}>
+            <button onClick={handlePopUp}>Speak to advisor</button>
           </div>
         </div>
       </div>

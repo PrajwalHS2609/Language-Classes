@@ -19,12 +19,15 @@ import ThankYouPage from "./Components/ThankYouPage/ThankYouPage";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import ExamPrep from "./Components/ExamPrep/ExamPrep";
+import PopUp from "./Components/PopUp/PopUp";
+import WhatsApp from "./Components/WhatsApp/WhatsApp";
 const App = () => {
   return (
     <div className="appContainer">
       <BrowserRouter>
         <NavBar />
         <ScrollTo />
+        <PopUp/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/courses" element={<CoursesPage />} />
@@ -42,6 +45,7 @@ const App = () => {
           <Route path="/terms-and-Conditions" element={<Terms />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
         </Routes>
+        <WhatsApp/>
         <Footer />
       </BrowserRouter>
     </div>
