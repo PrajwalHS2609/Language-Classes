@@ -1,0 +1,155 @@
+.a2WhyContainer {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.a2WhyHeadContainer {
+  /* border: solid blue; */
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.a2WhyHeadContainer > h2 {
+  font-size: 30px;
+}
+.a2WhyHeadContainer > h2 > span {
+  color: var(--customColor);
+}
+.a2WhyHeadContainer > p {
+  font-size: 20px;
+  color: grey;
+}
+.a2WhyMainContainer {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.a2WhyCardContainer {
+  /* border: solid blue; */
+  margin: 50px;
+  padding: 20px;
+  width: 30%;
+  height: 100%;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+  background-color: var(--customColor);
+}
+
+.a2WhyCardContent {
+  /* border: solid brown; */
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--customColor);
+}
+.a2WhyCardContent > h2 {
+  text-align: center;
+  color: var(--customColor2);
+}
+.a2WhyCardContent > p {
+  font-size: 20px;
+  text-align: justify;
+  color: var(--customColor2);
+}
+.a2WhyCardCircle2 {
+  /* border: solid blue; */
+  height: 150px;
+  width: 150px;
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--customColor);
+}
+.a2WhyCardCircle2 > img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .a2WhyMainContainer {
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px;
+    width: 100%;
+  }
+  .a2WhyHeadContainer > h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .a2WhyCardContainer {
+    /* border: solid blue; */
+    min-width: 300px;
+  }
+
+  .a2WhyCardContent {
+    /* border: solid brown; */
+    margin: 0px;
+    padding: 0px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .a2WhyMainContainer {
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0px;
+    width: 100%;
+  }
+  .a2WhyCardContainer {
+    /* border: solid blue; */
+    width: 40%;
+  }
+
+  .a2WhyCardContent {
+    /* border: solid brown; */
+    margin: 0px;
+    padding: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .a2WhyMainContainer {
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+  .a2WhyCardContainer {
+    /* border: solid blue; */
+    width: 30%;
+  }
+
+  .a2WhyCardContent {
+    /* border: solid brown; */
+    margin: 10px;
+    padding: 10px;
+  }
+}

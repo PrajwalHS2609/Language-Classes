@@ -1,0 +1,134 @@
+.trainerContainer {
+  /* border: solid red; */
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.trainerContainer > img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: 0px 0px;
+  margin: 0;
+}
+.trainerCover {
+  background-color: rgba(0, 0, 0, 0.566);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+}
+.trainersHeadContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.trainersHeadContainer > h2 {
+  font-size: 30px;
+  color: white;
+}
+.trainersHeadContainer > p {
+  color: white;
+  font-size: 20px;
+}
+.trainersMainContainer {
+  /* border: solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.trainersCardContainer {
+  /* border: solid green; */
+  height: 300px;
+  width: 40%;
+  margin: 20px;
+}
+.trainersCardContainer > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.trainersCardContainer > ul > h3 {
+  font-size: 30px;
+  color: var(--customColor);
+}
+.trainersCardContainer > ul > li {
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+  margin-left: 50px;
+  line-height: 40px;
+}
+.trainersHeadContainer > h2 > span {
+  color: var(--customColor);
+}
+@media screen and (min-width: 320px) and (max-width: 990px) {
+  .trainerContainer {
+    /* border: solid red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+  }
+  .trainerContainer > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 0px 0px;
+    margin: 0;
+  }
+  .trainerCover {
+    /* border: solid; */
+    background-color: var(--customColor2);
+    height: 100%;
+    width: 100%;
+    position: static;
+  }
+  .trainersHeadContainer > h2 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding: 5px;
+  }
+  .trainersHeadContainer > p {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    text-align: justify;
+  }
+  .trainersCardContainer {
+    /* border: solid green; */
+    height: 100%;
+    width: 90%;
+    margin: 20px;
+  }
+  .trainersCardContainer > ul > h3 {
+    text-align: center;
+  }
+  .trainersCardContainer > ul > li {
+    color: black;
+    font-size: 20px;
+    margin: 20px;
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .trainersHeadContainer > p {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+}

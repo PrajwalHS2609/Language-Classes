@@ -1,0 +1,70 @@
+.onlineExamContainer {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  background-color: var(--customColor2);
+}
+.onlineExamHead {
+  /* border: solid blue; */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.onlineExamHead > h2 {
+  /* border: solid red; */
+  text-align: center;
+  font-size: 30px;
+}
+.onlineExamHead > h2 > span {
+  color: var(--customColor);
+}
+.onlineExamHead > p {
+  font-size: 20px;
+  color: grey;
+}
+.onlineExamMainContainer {
+  /* border: solid green; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.onlineExamCard > ul > h3 {
+  color: var(--customColor);
+  font-size: 25px;
+  text-align: center;
+}
+.onlineExamCard > ul > li {
+  font-size: 20px;
+  margin: 10px;
+  color: grey;
+  line-height: 40px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .onlineExamContainer {
+    /* border: solid red; */
+    padding: 20px;
+  }
+}
+@media screen and (min-width:990px) {
+    .onlineExamCard {
+        /* border: solid blue; */
+        width: 40%;
+    }
+    .onlineExamCard > ul > h3 {
+        color: var(--customColor);
+        font-size: 25px;
+        text-align: start;
+      }
+}

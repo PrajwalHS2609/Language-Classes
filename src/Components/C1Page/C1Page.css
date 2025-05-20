@@ -1,0 +1,101 @@
+.c1DetailsContainer {
+    /* border: solid red; */
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 0px;
+    background-color: var(--customColor2);
+    padding: 20px;
+  }
+  .c1DetailsContainer > ul > li {
+    font-size: 20px;
+    margin-left: 50px;
+    padding: 5px;
+    color: var(--customColor);
+  }
+  .c1DetailsContainer > h3 {
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+  }
+  .c1PageMainContainer {
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .c1FlexContainer {
+    /* border: solid blue; */
+    padding: 20px;
+  }
+  .c1FlexContainer > h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .c1FlexContainer > h1 > span {
+    color: var(--customColor);
+  }
+  .c1FlexContainer > p {
+    font-size: 20px;
+    margin: 20px;
+    color: gray;
+  }
+  .c1FlexContainer > p > a {
+    color: var(--customColor);
+    text-decoration: none;
+  }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .c1DetailsContainer {
+      /* border: solid red; */
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 990px) {
+    .c1HeadImgContainer {
+      /* border: solid red; */
+      height: 80vh;
+    }
+    .c1HeadFormContent {
+      display: none;
+    }
+    .respFormContainer {
+      max-width: 300px;
+      display: flex;
+    }
+    .c1HeadTextContent > h2 {
+      font-size: 30px;
+    }
+  }
+  @media screen and (min-width: 990px) {
+    .c1HeadImgContainer {
+      /* border: solid red; */
+      height: 80vh;
+    }
+    .c1HeadImgContainer > img {
+      object-fit: cover;
+      object-position: 100% 0px;
+    }
+    .c1HeadTextContent {
+      /* border: solid green; */
+      width: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .c1HeadImgContainer {
+      /* border: solid red; */
+      height: 80vh;
+    }
+    .c1HeadImgContainer > img {
+      object-fit: cover;
+      object-position: 0px 0px;
+    }
+    .c1HeadTextContent {
+      /* border: solid green; */
+      width: 30%;
+    }
+  }
+  

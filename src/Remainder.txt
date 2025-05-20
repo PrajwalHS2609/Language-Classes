@@ -1,0 +1,3 @@
+make a thank you after clicking on book now in the form
+add why and why stars in about us
+change h1 in course page

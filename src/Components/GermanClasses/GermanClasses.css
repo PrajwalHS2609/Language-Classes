@@ -1,0 +1,50 @@
+.germanClassesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+  padding: 30px;
+}
+.germanClassesHead {
+  width: 100%;
+}
+.germanClassesHead > h1 {
+  font-size: 60px;
+  font-weight: lighter;
+  text-align: center;
+}
+.germanClassesHead > h1 > span {
+  color: var(--customColor);
+}
+.germanClassesPara > p {
+  margin: 20px;
+  font-size: 20px;
+  color: grey;
+}
+.germanClassesPara > p > a {
+  color: var(--customColor);
+  text-decoration: none;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .germanClassesContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+        padding: 10px;
+      }
+    .germanClassesHead > h1 {
+        font-size: 30px;
+        font-weight: lighter;
+        text-align: center;
+      }
+      .germanClassesPara > p {
+        margin: 20px;
+        font-size: 18px;
+        color: grey;
+      }
+}
