@@ -48,27 +48,27 @@ const Footer1 = () => {
           <h3>Courses</h3>
           <li>
             {" "}
-            <Link  to={"/a1"}  >German A1 Level</Link>
+            <Link to={"/a1"}>German A1 Level</Link>
           </li>
           <li>
             {" "}
-            <Link   to={"/a2"} >German A2 Level</Link>
+            <Link to={"/a2"}>German A2 Level</Link>
           </li>
           <li>
             {" "}
-            <Link to={"/b1"} >German B1 Level</Link>
+            <Link to={"/b1"}>German B1 Level</Link>
           </li>
           <li>
             {" "}
-            <Link to={"/b2"} >German B2 Level</Link>
+            <Link to={"/b2"}>German B2 Level</Link>
           </li>
           <li>
             {" "}
-            <Link to={"/c1"} >German C1 Level</Link>
+            <Link to={"/c1"}>German C1 Level</Link>
           </li>
           <li>
             {" "}
-            <Link to={"/c2"} >German C2 Level</Link>
+            <Link to={"/c2"}>German C2 Level</Link>
           </li>
           <li>
             {" "}
@@ -104,8 +104,7 @@ const Footer1 = () => {
               icon={faLocationDot}
               className="menuIcon"
             ></FontAwesomeIcon>
-            3rd Floor, 4 C-513, above Bandhan Bank, HRBR Layout 2nd Block, HRBR
-            Layout, Kalyan Nagar, Bengaluru, Karnataka 560043
+            Dr.Shivaram Karanth Nagar, Rachenahalli, RK Hegde Nagar, Bangalore
           </li>
           <li>
             <FontAwesomeIcon
