@@ -11,6 +11,7 @@ const PrizmaMap = () => {
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
         className="map"
+        title="Map1"
       ></iframe>
     </div>
   );

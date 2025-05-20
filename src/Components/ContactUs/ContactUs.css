@@ -65,8 +65,8 @@
 }
 .contactInfoItem1 {
   /* border: solid blue; */
-  width: 20%;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,119 +97,110 @@
   text-decoration: none;
   color: var(--customColor);
 }
+.contactInfoContainer > h2 {
+  font-size: 40px;
+  color: var(--customColor);
+  margin-bottom: 20px;
+}
+/* ---------------------------------Form------------------------------------------ */
+
 .contactUsFormContainer {
   /* border: solid red; */
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
   gap: 20px;
 }
-.contactUsFormContainer {
-  /* border: solid red; */
-  height: 550px;
-  width: 100%;
-  backdrop-filter: blur(10px);
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-}
-.contactUsFormContainer > h2 {
+
+.contactUsFormContainer h2 {
   color: var(--customColor);
+  font-size: 32px;
+  margin-bottom: 10px;
 }
-.contactUsFormContainer > p {
+
+.contactUsFormContainer p {
   text-align: center;
+  max-width: 600px;
+  color: #666;
 }
-.contactUsFormContainer > form {
-  /* border: solid red; */
+
+.contactUsFormContainer form {
   width: 100%;
-  height: 100%;
 }
-.contactUsFormContainer > form > fieldset {
-  /* border: solid green; */
-  width: 100%;
-  height: 100%;
+
+.contactUsFormContainer fieldset {
   border: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-}
-.contactUsFormContainer > form > fieldset > legend {
-  font-size: 30px;
-  text-align: center;
-  color: var(--customColor);
-  /* border: solid black; */
-  padding: 20px;
-  font-family: "customFont", sans-serif;
-}
-.contactUsFormContainer > form > fieldset > table {
-  /* border: solid yellow; */
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 40px;
-}
-.contactUsFormContainer > form > fieldset > table > tr {
-  /* border: solid purple; */
-  width: 60%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 30px;
+  gap: 25px;
 }
 
-.contactUsFormContainer > form > fieldset > table > tr > td {
-  border-bottom: solid grey;
+.contactUsFormContainer table {
   width: 100%;
-  height: 100%;
-  background-color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.contactUsFormContainer > form > fieldset > table > tr > td > input {
-  font-size: 100%;
-  width: 90%;
-  height: 90%;
+.contactUsFormContainer tr {
+  display: flex;
+  justify-content: center;
+}
+
+.contactUsFormContainer td {
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.contactUsFormContainer input,
+.contactUsFormContainer textarea {
+  width: 100%;
+  padding: 10px;
   border: none;
   outline: none;
-}
-.contactUsFormContainer > form > fieldset > table > tr > td > textarea {
-  border: none;
-  outline: none;
-  width: 90%;
-  color: grey;
-  font-size: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  color: #333;
 }
 
-.contactUsFormContainer > form > fieldset > table > button {
-  border: solid var(--customColor);
+.contactUsFormContainer textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contactUsFormContainer button.sub {
+  align-self: center;
   width: 50%;
-  height: 50px;
-  border-radius: 10px;
-  font-size: 20px;
-  background-color: white;
-  color: white;
+  padding: 12px;
+  border: 2px solid var(--customColor);
+  border-radius: 8px;
   background-color: var(--customColor);
-  text-align: center;
-  transition: 200ms ease-in-out;
-}
-.contactUsFormContainer > form > fieldset > table > button:hover {
-  color: var(--customColor);
-  background-color: white;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
-.contactUsFormContainer {
-  font-size: 20px;
+
+.contactUsFormContainer button.sub:hover {
+  background-color: white;
+  color: var(--customColor);
 }
+
 .sub > a {
   color: white;
   text-decoration: none;
@@ -240,7 +231,7 @@
     width: 100%;
     height: 100%;
   }
-  .map{
+  .map {
     width: 100%;
   }
 }

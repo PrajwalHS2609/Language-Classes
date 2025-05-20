@@ -4,7 +4,7 @@ import listening from "./../../Media/listening.png";
 import reading from "./../../Media/reading.png";
 import writing from "./../../Media/writing.png";
 import speaking from "./../../Media/speaking.png";
-import ExamPrepMain from "./ExamPrepMain";
+// import ExamPrepMain from "./ExamPrepMain";
 const ExamPrepPattern = () => {
   return (
     <div className="examPatternContainer">

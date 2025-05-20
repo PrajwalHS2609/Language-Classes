@@ -1,31 +1,41 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ContactUs.css";
-import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+
 const ContactUsForm = () => {
-  let navigate = useNavigate();
-  let [data, setData] = useState({
-    userName: "",
-    email: "",
-    phone: "",
-    detail: "",
-  });
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(event.target);
 
-  let { name, email, phone } = data;
+    formData.append("access_key", "");
 
-  let handleData = (e) => {
-    let name = e.target.name;
-    let value = e.target.value;
-    setData({ ...data, [name]: value });
-  };
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
 
-  let handleSubmit = (e) => {
-    e.preventDefault();
-    // let { name, phone, email, requirement } = data;
-    // const mailtoLink = `mailto:hello@buildurspace.com?subject=Message from ${name}&body=${encodeURIComponent(
-    //   `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\n\n${requirement}`
-    // )}`;
-    // window.location.href = mailtoLink;
-    navigate("/thank-you");
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Mail Sent successfully",
+        icon: "success",
+      });
+      form.reset(); // Clear the form after successful submission
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Failed to send message. Please try again later.",
+        icon: "error",
+      });
+    }
   };
   return (
     <div className="contactUsFormContainer">
@@ -34,20 +44,17 @@ const ContactUsForm = () => {
         Have some suggestions or just want to say hi? Our support team are ready
         to help you 24/7.
       </p>
-      <form action="" onSubmit={handleSubmit}>
+      <form action="" onSubmit={onSubmit}>
         <fieldset>
           <table>
             <tr>
               <td>
                 <input
                   type="text"
-                  id="name"
+                  placeholder="Your Name"
                   name="name"
-                  value={name}
-                  placeholder="Name"
-                  onChange={handleData}
-                  autoComplete="no"
                   required
+                  autoComplete="off"
                 />
               </td>
             </tr>
@@ -55,14 +62,11 @@ const ContactUsForm = () => {
               {/* <label htmlFor="email">Email :</label> */}
               <td>
                 <input
-                  type="text"
-                  id="email"
+                  type="email"
+                  placeholder="Email Address"
                   name="email"
-                  value={email}
-                  placeholder="Email"
-                  onChange={handleData}
-                  autoComplete="no"
                   required
+                  autoComplete="off"
                 />
               </td>
             </tr>
@@ -70,24 +74,26 @@ const ContactUsForm = () => {
               {/* <label htmlFor="phone">Phone :</label> */}
               <td>
                 <input
-                  type="text"
-                  id="phone"
-                  name="phone"
-                  value={phone}
-                  placeholder="Phone"
-                  onChange={handleData}
-                  autoComplete="no"
+                  type="phone"
+                  placeholder="Phone number"
                   required
+                  autoComplete="off"
+                  name="phone"
                 />
               </td>
             </tr>
             <tr>
               {/* <label htmlFor="detail">Details :</label> */}
               <td>
-                <textarea name="" id=""  placeholder="Message"></textarea>
+                <textarea
+                  placeholder="Your Message"
+                  required
+                  autoComplete="off"
+                  name="message"
+                ></textarea>{" "}
               </td>
             </tr>
-            <button className="sub" type="handlesubmit">
+            <button className="sub" type="onSubmit">
               Book Now
             </button>
           </table>

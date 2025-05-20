@@ -76,7 +76,7 @@ const Menu = () => {
         </li>
         <div className="menuContent">
           <li>
-            <a href="">Speak to advisor</a>
+            <a href="/">Speak to advisor</a>
           </li>
         </div>
       </div>
@@ -164,7 +164,7 @@ const Menu = () => {
           </ul>
           <div className="respMenuGap">
             <button>
-              <a href="">Speak to advisor</a>
+              <a href="/">Speak to advisor</a>
             </button>
           </div>
         </div>

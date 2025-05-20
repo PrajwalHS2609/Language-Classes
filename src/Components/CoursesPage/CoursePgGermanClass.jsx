@@ -1,5 +1,5 @@
 import React from "react";
-import Testimonial from './../Testimonial/Testimonial';
+// import Testimonial from './../Testimonial/Testimonial';
 import CourseTestimonial from "./CourseTestimonial/CourseTestimonial";
 
 const CoursePgGermanClass = () => {

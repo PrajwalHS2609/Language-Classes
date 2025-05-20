@@ -6,6 +6,7 @@ import phone from "./../../Media/Phone.png"
 const ContactUsInfo = () => {
   return (
     <div className="contactInfoContainer">
+      <h2>Contact Us</h2>
       <div className="contactInfoContent">
         <div className="contactInfoItem1">
           <img

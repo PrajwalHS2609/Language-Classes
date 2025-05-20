@@ -7,10 +7,10 @@ const CoursesBlockCard = (props) => {
         <p className="coursesBlockCardPara">DE</p>
       </div>
       <h4 className="coursesBlockCardPara">
-        <a href="">{props.head}</a>
+        <a href="/">{props.head}</a>
       </h4>
       <p className="coursesBlockCardPara">
-        <a href="">{props.para}</a>
+        <a href="/">{props.para}</a>
       </p>
     </div>
   );

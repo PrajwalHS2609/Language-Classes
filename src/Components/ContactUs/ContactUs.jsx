@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContactUs.css";
-import ContactUsMap from "./ContactUsMap";
-import contactUs from "./../../Media/contactUs.jpg";
+// import ContactUsMap from "./ContactUsMap";
+// import contactUs from "./../../Media/contactUs.jpg";
 import ContactUsInfo from "./ContactUsInfo";
 import ContactUsForm from "./ContactUsForm";
 import PrizmaMap from "../PrizmaMap/PrizmaMap";

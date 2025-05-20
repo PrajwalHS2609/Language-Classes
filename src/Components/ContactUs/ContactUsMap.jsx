@@ -11,6 +11,8 @@ const ContactUsMap = () => {
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
+                title="Map2"
+
       ></iframe>
     </div>
   );

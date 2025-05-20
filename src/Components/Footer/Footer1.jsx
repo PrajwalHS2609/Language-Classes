@@ -23,23 +23,23 @@ const Footer1 = () => {
           <h3>About Us</h3>
           <li>
             {" "}
-            <a href="">About Us</a>
+            <a href="/">About Us</a>
           </li>
           <li>
             {" "}
-            <a href="">Corporate Training</a>
+            <a href="/">Corporate Training</a>
           </li>
           <li>
             {" "}
-            <a href="">Exam Perpetration</a>
+            <a href="/">Exam Perpetration</a>
           </li>
           <li>
             {" "}
-            <a href="">Blog</a>
+            <a href="/">Blog</a>
           </li>
           <li>
             {" "}
-            <a href="">Become a Teacher</a>
+            <a href="/">Become a Teacher</a>
           </li>
         </ul>
       </div>
@@ -72,11 +72,11 @@ const Footer1 = () => {
           </li>
           <li>
             {" "}
-            <a href="">Intensive Course</a>
+            <a href="/">Intensive Course</a>
           </li>
           <li>
             {" "}
-            <a href="">Kids Course</a>
+            <a href="/">Kids Course</a>
           </li>
         </ul>
       </div>

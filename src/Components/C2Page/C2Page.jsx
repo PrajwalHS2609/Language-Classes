@@ -4,7 +4,7 @@ import OnlineExam from "../OnlineExam/OnlineExam";
 import GermanBegins from "../GermanBegins/GermanBegins";
 import WhyUs from "../WhyUs/WhyUs";
 import SocialVid from "../SocialVid/SocialVid";
-import Benefits from "../Benefits/Benefits";
+// import Benefits from "../Benefits/Benefits";
 import Reviews from "../Reviews/Reviews";
 import PrizmaMap from "../PrizmaMap/PrizmaMap";
 import C2 from "./../../Media/C2.png";

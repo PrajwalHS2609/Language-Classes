@@ -11,7 +11,6 @@ import Trainers from "../Trainers/Trainers";
 import SocialVid from "../SocialVid/SocialVid";
 import PrizmaMap from "../PrizmaMap/PrizmaMap";
 import Reviews from "../Reviews/Reviews";
-import Testimonial from "../Testimonial/Testimonial";
 import { Helmet } from "react-helmet";
 
 const HomePage = () => {

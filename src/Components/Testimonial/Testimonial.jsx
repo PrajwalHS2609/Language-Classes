@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Testimonial.css";
-import TestimonialHead from './TestimonialHead';
+// import TestimonialHead from './TestimonialHead';
 import TestimonialMain from './TestimonialMain';
 import TestimonialFooter from './TestimonialFooter';
 
