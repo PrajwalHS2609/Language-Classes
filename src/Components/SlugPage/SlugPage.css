@@ -67,6 +67,7 @@
     font-size: 30px;
     width: 100%;
   }
+
 }
 
 .slug-container {
@@ -447,4 +448,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .a1HeadImgContainer {
+    /* border: solid red; */
+    height: 100%;
+    width: 100%;
+  }
+  .a1HeadImgContainer > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .a1HeadFormContent {
+    display: none;
+  }
+  .a1HeadTextContent {
+    /* border: solid green; */
+    top: 30%;
+    left: 0;
+    width: 70%;
+    height: 50%;
+  }
+  .a1HeadTextContent > h2 {
+    font-size: 20px;
+  }
+  .a1HeadRespForm {
+    display: flex;
+  }
+
+  .respFormContainer {
+    max-width: 300px;
+    display: flex;
+  }
+  .a1HeadContent2 {
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }

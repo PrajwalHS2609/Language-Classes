@@ -159,7 +159,7 @@ export default function SlugPage() {
             )}
           </div> */}
           <div className="exploreSeoOptimizing">
-            {/* <h1>{servicePage.title}</h1> */}
+            <h1>{servicePage.title}</h1>
             {isValidBlocks(servicePage.body1) && (
               <PortableText value={servicePage.body1} />
             )}
