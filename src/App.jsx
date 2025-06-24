@@ -21,13 +21,16 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import ExamPrep from "./Components/ExamPrep/ExamPrep";
 import PopUp from "./Components/PopUp/PopUp";
 import WhatsApp from "./Components/WhatsApp/WhatsApp";
+import Blog from "./Components/Blog/Blog";
+import SlugPage from "./Components/SlugPage/SlugPage";
+import CategoryPage from "./Components/Blog/Category";
 const App = () => {
   return (
     <div className="appContainer">
       <BrowserRouter>
         <NavBar />
         <ScrollTo />
-        <PopUp/>
+        <PopUp />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/courses" element={<CoursesPage />} />
@@ -37,15 +40,18 @@ const App = () => {
           <Route path="/b2-german-course" element={<B2Page />} />
           <Route path="/c1-german-course" element={<C1Page />} />
           <Route path="/c2-german-course" element={<C2Page />} />
-          <Route path="/exam-preparation" element={<ExamPrep/>} />
+          <Route path="/exam-preparation" element={<ExamPrep />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/terms-and-Conditions" element={<Terms />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/:slug" element={<SlugPage />} />
+          <Route path="/category/:category" element={<CategoryPage />} />
         </Routes>
-        <WhatsApp/>
+        <WhatsApp />
         <Footer />
       </BrowserRouter>
     </div>

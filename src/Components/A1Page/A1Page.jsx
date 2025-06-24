@@ -4,7 +4,6 @@ import A1PageHead from "./A1PageHead";
 import A1PageMain from "./A1PageMain";
 import A1Flexibility from "./A1Flexibility";
 import OnlineExam from "../OnlineExam/OnlineExam";
-import CoursesOnline from "../CoursesOnline/CoursesOnline";
 import GermanBegins from "../GermanBegins/GermanBegins";
 import WhyUs from "../WhyUs/WhyUs";
 import SocialVid from "../SocialVid/SocialVid";

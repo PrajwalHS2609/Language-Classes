@@ -5,7 +5,6 @@ import GermanBegins from "../GermanBegins/GermanBegins";
 import WhyUs from "../WhyUs/WhyUs";
 import SocialVid from "../SocialVid/SocialVid";
 import Reviews from "../Reviews/Reviews";
-import Benefits from "../Benefits/Benefits";
 import PrizmaMap from "../PrizmaMap/PrizmaMap";
 import A1PageHead from "../A1Page/A1PageHead";
 import B2Main from "./B2Main.jsx";

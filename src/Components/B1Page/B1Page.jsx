@@ -7,7 +7,6 @@ import GermanBegins from "../GermanBegins/GermanBegins";
 import WhyUs from "../WhyUs/WhyUs";
 import SocialVid from "../SocialVid/SocialVid";
 import Reviews from "../Reviews/Reviews";
-import Benefits from "../Benefits/Benefits";
 import PrizmaMap from "../PrizmaMap/PrizmaMap";
 import B1Flexibility from "./B1Flexibility";
 import B1Why from "./B1Why/B1Why";

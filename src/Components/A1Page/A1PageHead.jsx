@@ -3,7 +3,6 @@ import "./A1Page.css";
 import A1Train from "./A1Train";
 import FormMain from "../Form/FormMain";
 import RespForm from "../Form/RespForm";
-import WhyBlock from "../WhyBlock/WhyBlock";
 const A1PageHead = (props) => {
   return (
     <div className="a1HeadContainer">
