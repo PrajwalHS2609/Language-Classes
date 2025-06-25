@@ -8,6 +8,14 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
+.blogMain-wrapper {
+  /* border: solid green; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
 #blogCategory-container {
   flex-direction: column;
 }
@@ -118,7 +126,7 @@
     margin: 40px;
   }
   .blogMain {
-  /* border: solid red; */
-  padding: 0px;
-}
+    /* border: solid red; */
+    padding: 0px;
+  }
 }

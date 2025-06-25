@@ -33,27 +33,29 @@ export default function Blog() {
   return (
     <div className="blogMain">
       <SlugHeader img={BlogImg} head="OUR BLOG" />
-      {posts.map((post) => (
-        <div className="blogCard" key={post._id}>
-          <div className="blogImg">
-            {post.mainImage?.asset?.url && (
-              <img
-                src={post.mainImage.asset.url}
-                alt={post.title}
-                width={550}
-                height={310}
-              />
-            )}
+      <div className="blogMain-wrapper">
+        {posts.map((post) => (
+          <div className="blogCard" key={post._id}>
+            <div className="blogImg">
+              {post.mainImage?.asset?.url && (
+                <img
+                  src={post.mainImage.asset.url}
+                  alt={post.title}
+                  width={550}
+                  height={310}
+                />
+              )}
+            </div>
+            <h4 className="blogCardH4">{post.title}</h4>
+            <p>{post.description}</p>
+            <div className="blogBtn">
+              <Link to={`/${post.slug.current}`}>
+                <button>Read More </button>
+              </Link>
+            </div>
           </div>
-          <h4 className="blogCardH4">{post.title}</h4>
-          <p>{post.description}</p>
-          <div className="blogBtn">
-            <Link to={`/${post.slug.current}`}>
-              <button>Read More </button>
-            </Link>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
