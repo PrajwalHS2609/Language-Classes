@@ -21,8 +21,17 @@
 
 .footer1Content > ul > h3 {
   color: var(--customColor);
+  font-size: 25px;
+}
+.footer1Content > ul {
+  /* border: solid blue; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .footer1Content > ul > li {
+  /* border: solid green; */
   list-style: none;
   color: black;
   display: flex;
@@ -30,10 +39,15 @@
   align-items: flex-start;
   gap: 10px;
   margin: 10px;
+  font-size: 20px;
 }
 .footer1Content > ul > li > a {
   color: black;
   text-decoration: none;
+  font-size: 20px;
+  &:hover {
+    color: var(--customColor);
+  }
 }
 
 #footer1Content5 > ul {

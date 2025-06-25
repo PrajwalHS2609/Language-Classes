@@ -20,26 +20,22 @@ const Footer1 = () => {
     <div className="footer1Container">
       <div className="footer1Content" id="footer1Content1">
         <ul>
-          <h3>About Us</h3>
+          <h3>Our Links</h3>
           <li>
             {" "}
-            <a href="/">About Us</a>
+            <a href="/about-us">About Us</a>
           </li>
           <li>
             {" "}
-            <a href="/">Corporate Training</a>
+            <a href="/exam-preparation">Exam Perpetration</a>
           </li>
           <li>
             {" "}
-            <a href="/">Exam Perpetration</a>
+            <a href="/blog">Blog</a>
           </li>
           <li>
             {" "}
-            <a href="/">Blog</a>
-          </li>
-          <li>
-            {" "}
-            <a href="/">Become a Teacher</a>
+            <a href="/contact-us">Become a Teacher</a>
           </li>
         </ul>
       </div>
@@ -48,35 +44,19 @@ const Footer1 = () => {
           <h3>Courses</h3>
           <li>
             {" "}
-            <Link to={"/a1"}>German A1 Level</Link>
+            <Link to={"/a1-german-course"}>German A1 Level</Link>
           </li>
           <li>
             {" "}
-            <Link to={"/a2"}>German A2 Level</Link>
+            <Link to={"/a2-german-course"}>German A2 Level</Link>
           </li>
           <li>
             {" "}
-            <Link to={"/b1"}>German B1 Level</Link>
+            <Link to={"/b1-german-course"}>German B1 Level</Link>
           </li>
           <li>
             {" "}
-            <Link to={"/b2"}>German B2 Level</Link>
-          </li>
-          <li>
-            {" "}
-            <Link to={"/c1"}>German C1 Level</Link>
-          </li>
-          <li>
-            {" "}
-            <Link to={"/c2"}>German C2 Level</Link>
-          </li>
-          <li>
-            {" "}
-            <a href="/">Intensive Course</a>
-          </li>
-          <li>
-            {" "}
-            <a href="/">Kids Course</a>
+            <Link to={"/b2-german-course"}>German B2 Level</Link>
           </li>
         </ul>
       </div>
