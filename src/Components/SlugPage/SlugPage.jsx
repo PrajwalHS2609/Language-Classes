@@ -6,6 +6,29 @@ import client from "../../client";
 import { Helmet } from "react-helmet";
 import BlogSideBar from "./../Blog/BlogSideBar/BlogSideBar";
 import SlugHeader from "./SlugHeader";
+import imageUrlBuilder from "@sanity/image-url";
+
+// ✅ Build image URLs
+const builder = imageUrlBuilder(client);
+function urlFor(source) {
+  return builder.image(source);
+}
+
+// ✅ PortableText components (handles image blocks!)
+const portableComponents = {
+  types: {
+    image: ({ value }) => {
+      return (
+        <img
+          src={urlFor(value).width(800).url()}
+          alt={value.alt || ""}
+          style={{ maxWidth: "100%", height: "auto", margin: "1rem 0" }}
+        />
+      );
+    },
+  },
+};
+
 function isValidBlocks(blocks) {
   return (
     Array.isArray(blocks) &&
@@ -26,7 +49,6 @@ export default function SlugPage() {
 
     setIsLoading(true);
 
-    // Main fetch query for both post and serviceCategory
     client
       .fetch(
         `{
@@ -37,10 +59,10 @@ export default function SlugPage() {
               asset->{_id,url},
               alt
             },
-              source {
-    text,
-    url
-  }
+            source {
+              text,
+              url
+            }
           },
 
           "serviceCategory": *[_type == "ServiceCategory" && slug.current == $slug][0]{
@@ -67,26 +89,6 @@ export default function SlugPage() {
         console.error("Sanity fetch error:", err);
         setIsLoading(false);
       });
-  }, [slug]);
-
-  // Separate test for serviceCategory to debug mainImage specifically
-  useEffect(() => {
-    if (!slug) return;
-    client
-      .fetch(
-        `*[_type == "ServiceCategory" && slug.current == $slug][0]{
-          title,
-          mainImage {
-            asset->{_id, url},
-            alt
-          }
-        }`,
-        { slug }
-      )
-      .then((data) => {
-        console.log("Debug ServiceCategory fetch:", data);
-      })
-      .catch(console.error);
   }, [slug]);
 
   if (isLoading) return <h1>Loading...</h1>;
@@ -116,7 +118,10 @@ export default function SlugPage() {
               <h1>{blogPost.title}</h1>
               {isValidBlocks(blogPost.body) ? (
                 <>
-                  <PortableText value={blogPost.body} />
+                  <PortableText
+                    value={blogPost.body}
+                    components={portableComponents}
+                  />
                   {blogPost.source?.url && blogPost.source?.text && (
                     <p className="source-link">
                       Source:{" "}
@@ -149,23 +154,20 @@ export default function SlugPage() {
               head={servicePage.title}
             />
           )}
-          {/* <div className="slugService-imgContainer">
-            {servicePage.mainImage?.asset?.url && (
-              <img
-                src={servicePage.mainImage.asset.url}
-                alt={servicePage.mainImage.alt || servicePage.title}
-                className="blog__image rounded-t"
-              />
-            )}
-          </div> */}
           <div className="exploreSeoOptimizing">
             <h1>{servicePage.title}</h1>
             {isValidBlocks(servicePage.body1) && (
-              <PortableText value={servicePage.body1} />
+              <PortableText
+                value={servicePage.body1}
+                components={portableComponents}
+              />
             )}
 
             {isValidBlocks(servicePage.body2) && (
-              <PortableText value={servicePage.body2} />
+              <PortableText
+                value={servicePage.body2}
+                components={portableComponents}
+              />
             )}
           </div>
         </div>
