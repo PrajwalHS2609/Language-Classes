@@ -67,7 +67,6 @@
     font-size: 30px;
     width: 100%;
   }
-
 }
 
 .slug-container {
@@ -257,6 +256,18 @@
   text-align: start;
   font-size: 25px;
 }
+.exploreSeoOptimizing > h4 {
+  color: var(--customColor);
+  width: 100%;
+  text-align: start;
+  font-size: 25px;
+}
+.exploreSeoOptimizing > h5 {
+  color: var(--customColor);
+  width: 100%;
+  text-align: start;
+  font-size: 18px;
+}
 .exploreSeoOptimizing > h6 {
   color: var(--customColor);
   width: 100%;
@@ -387,7 +398,7 @@
 }
 
 /* ------------------SlugHeader-------------------------------------- */
-.a1HeadContainer{
+.a1HeadContainer {
   width: 100%;
 }
 .a1HeadImgContainer {
