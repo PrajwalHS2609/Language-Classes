@@ -6,28 +6,10 @@ import client from "../../client";
 import { Helmet } from "react-helmet";
 import BlogSideBar from "./../Blog/BlogSideBar/BlogSideBar";
 import SlugHeader from "./SlugHeader";
-import imageUrlBuilder from "@sanity/image-url";
+import { portableTextComponents } from "../PortableTextComponents";
 
 // ✅ Build image URLs
-const builder = imageUrlBuilder(client);
-function urlFor(source) {
-  return builder.image(source);
-}
 
-// ✅ PortableText components (handles image blocks!)
-const portableComponents = {
-  types: {
-    image: ({ value }) => {
-      return (
-        <img
-          src={urlFor(value).width(800).url()}
-          alt={value.alt || ""}
-          style={{ maxWidth: "100%", height: "auto", margin: "1rem 0" }}
-        />
-      );
-    },
-  },
-};
 
 function isValidBlocks(blocks) {
   return (
@@ -120,7 +102,7 @@ export default function SlugPage() {
                 <>
                   <PortableText
                     value={blogPost.body}
-                    components={portableComponents}
+                    components={portableTextComponents}
                   />
                   {blogPost.source?.url && blogPost.source?.text && (
                     <p className="source-link">
@@ -154,19 +136,19 @@ export default function SlugPage() {
               head={servicePage.title}
             />
           )}
-          <div className="exploreSeoOptimizing">
+          <div className="slugService-content">
             <h1>{servicePage.title}</h1>
             {isValidBlocks(servicePage.body1) && (
               <PortableText
                 value={servicePage.body1}
-                components={portableComponents}
+                components={portableTextComponents}
               />
             )}
 
             {isValidBlocks(servicePage.body2) && (
               <PortableText
                 value={servicePage.body2}
-                components={portableComponents}
+                components={portableTextComponents}
               />
             )}
           </div>
